@@ -1,0 +1,177 @@
+{
+ "phrases": [
+  {
+   "hashToText": {
+    "9Rg/KdDoTjDth+K1z2+3DA==": "system",
+    "IVYu9iBLW5/ayi4irDWDvQ==": "light",
+    "ofpoNYNCfvqV0VEa3tfJnQ==": "dark",
+    "+UAmSqWRfScBSA9mOCDUaw==": "cool",
+    "sfI0f1ZnQVe1PeGSHI/I8w==": "warm"
+   },
+   "filepath": "src/components/common/theme/index.js",
+   "line_beg": 32,
+   "col_beg": 10,
+   "line_end": 34,
+   "col_end": 16,
+   "desc": "theme",
+   "project": "",
+   "type": "table",
+   "jsfbt": {
+    "t": {
+     "0": "system",
+     "1": "light",
+     "2": "dark",
+     "3": "cool",
+     "4": "warm"
+    },
+    "m": [
+     null
+    ]
+   }
+  },
+  {
+   "hashToText": {
+    "qzngqYSwMEXub6+4Tz63oA==": "DenPer Company"
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 8,
+   "col_beg": 11,
+   "line_end": 8,
+   "col_end": 41,
+   "desc": "title",
+   "project": "",
+   "type": "text",
+   "jsfbt": "DenPer Company"
+  },
+  {
+   "hashToText": {
+    "Q4TwVYHHqk8luYuAAR1lcg==": "We are a small team of software engineers spread out all across the world, building apps that help and make people better."
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 9,
+   "col_beg": 17,
+   "line_end": 12,
+   "col_end": 5,
+   "desc": "description",
+   "project": "",
+   "type": "text",
+   "jsfbt": "We are a small team of software engineers spread out all across the world, building apps that help and make people better."
+  },
+  {
+   "hashToText": {
+    "ZgMHzTmGQX+VBDiK0Y0qgg==": "Hello World!"
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 18,
+   "col_beg": 10,
+   "line_end": 18,
+   "col_end": 50,
+   "desc": "greetings",
+   "project": "",
+   "type": "text",
+   "jsfbt": "Hello World!"
+  },
+  {
+   "hashToText": {
+    "9NQlkthjn1d4AlrxbHTFnQ==": "We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are {=AllyFile} and {=AllyWeds}."
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 21,
+   "col_beg": 10,
+   "line_end": 42,
+   "col_end": 16,
+   "desc": "description",
+   "project": "",
+   "type": "text",
+   "jsfbt": "We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are {=AllyFile} and {=AllyWeds}."
+  },
+  {
+   "hashToText": {
+    "zrnWJ7tNdbnqEfmF5xXRdQ==": "AllyFile"
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 25,
+   "col_beg": 12,
+   "line_end": 32,
+   "col_end": 19,
+   "desc": "In the phrase: \"We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are{=AllyFile} and{=AllyWeds}.\"",
+   "project": "",
+   "type": "text",
+   "jsfbt": "AllyFile"
+  },
+  {
+   "hashToText": {
+    "0uobHfmILCTyTjQ5qdf07Q==": "AllyWeds"
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 34,
+   "col_beg": 12,
+   "line_end": 41,
+   "col_end": 19,
+   "desc": "In the phrase: \"We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are{=AllyFile} and{=AllyWeds}.\"",
+   "project": "",
+   "type": "text",
+   "jsfbt": "AllyWeds"
+  },
+  {
+   "hashToText": {
+    "cUX4TmyHK2oBPMxG2iGV4w==": "Denesh"
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 59,
+   "col_beg": 14,
+   "line_end": 59,
+   "col_end": 43,
+   "desc": "name",
+   "project": "",
+   "type": "text",
+   "jsfbt": "Denesh"
+  },
+  {
+   "hashToText": {
+    "l6ks8MY59IvLUQOYPe6OXA==": "Founder"
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 62,
+   "col_beg": 14,
+   "line_end": 62,
+   "col_end": 47,
+   "desc": "caption",
+   "project": "",
+   "type": "text",
+   "jsfbt": "Founder"
+  },
+  {
+   "hashToText": {
+    "P/U+GW7v/s7qiEe9PmIvjw==": "Perakash"
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 79,
+   "col_beg": 14,
+   "line_end": 79,
+   "col_end": 45,
+   "desc": "name",
+   "project": "",
+   "type": "text",
+   "jsfbt": "Perakash"
+  },
+  {
+   "hashToText": {
+    "6mpZGkwJg8+3w08lgdxYNg==": "Co-Founder"
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 87,
+   "col_beg": 14,
+   "line_end": 87,
+   "col_end": 50,
+   "desc": "caption",
+   "project": "",
+   "type": "text",
+   "jsfbt": "Co-Founder"
+  }
+ ],
+ "childParentMappings": {
+  "4": 3,
+  "5": 3
+ }
+}

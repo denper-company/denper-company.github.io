@@ -1,0 +1,16 @@
+{
+  "ta": {
+    "bcp47": "ta",
+    "displayName": "தமிழ்",
+    "englishName": "Tamil",
+    "localeName": "ta",
+    "rtl": false
+  },
+  "en": {
+    "bcp47": "en",
+    "displayName": "English",
+    "englishName": "English",
+    "localeName": "en",
+    "rtl": false
+  }
+}
