@@ -1,5 +1,5 @@
 import fbt from "fbt";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { ColorSwatchIcon } from "@heroicons/react/outline";
 import Select from "components/common/select";
 import themeOptions from "enums/Theme$FbtEnum";
@@ -17,9 +17,9 @@ export default function SwitchTheme() {
     dataset.colorScheme = theme;
     window.sessionStorage?.setItem?.("theme", theme);
   }, [theme]);
-  const handleChange = ({ target: { value } }) => {
+  const handleChange = useCallback(({ target: { value } }) => {
     setTheme(() => value);
-  };
+  }, []);
   return (
     <Select
       value={theme}

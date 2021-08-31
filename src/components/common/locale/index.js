@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import { LOCALES, useLocaleContext } from "contexts/locale";
 import { GlobeAltIcon } from "@heroicons/react/outline";
@@ -10,11 +11,14 @@ export default function SwitchLocale() {
       context: { locale },
     },
   ] = useLocaleContext();
-  const handleChange = ({ target: { value } }) => {
-    setSearchParams({
-      lang: value,
-    });
-  };
+  const handleChange = useCallback(
+    ({ target: { value } }) => {
+      setSearchParams({
+        lang: value,
+      });
+    },
+    [setSearchParams]
+  );
   return (
     <Select
       value={LOCALES[locale].bcp47}

@@ -1,18 +1,22 @@
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useCallback, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
 export default function Img(props) {
-  const [isOpen, setIsOpen] = useState(() => false);
   const imgRef = useRef();
+  const [isOpen, setIsOpen] = useState(() => false);
+  const handleOpen = useCallback((event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    setIsOpen(true);
+  }, []);
+  const handleClose = useCallback(() => setIsOpen(() => false), []);
+  const handleLoad = useCallback(
+    (event) => event.target.classList.add("w-auto", "h-auto", "animate-none"),
+    []
+  );
   return (
     <>
-      <picture
-        onClick={(event) => {
-          event.preventDefault();
-          event.stopPropagation();
-          setIsOpen(true);
-        }}
-      >
+      <picture onClick={handleOpen}>
         <source srcSet={`${props.src}.avif`} type="image/avif" />
         <source srcSet={`${props.src}.webp`} type="image/webp" />
         <img {...props} src={`${props.src}.jpg`} alt={props.alt} />
@@ -24,7 +28,7 @@ export default function Img(props) {
           className="fixed z-10 inset-0 overflow-y-auto"
           initialFocus={imgRef}
           open={isOpen}
-          onClose={() => setIsOpen(() => false)}
+          onClose={handleClose}
         >
           <div className="flex items-center justify-center min-h-screen text-center">
             <Transition.Child
@@ -66,14 +70,8 @@ export default function Img(props) {
                     decoding="async"
                     loading="lazy"
                     ref={imgRef}
-                    onClick={() => setIsOpen(() => false)}
-                    onLoad={(event) =>
-                      event.target.classList.add(
-                        "w-auto",
-                        "h-auto",
-                        "animate-none"
-                      )
-                    }
+                    onClick={handleClose}
+                    onLoad={handleLoad}
                   />
                 </picture>
               </div>
