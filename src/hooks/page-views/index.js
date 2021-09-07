@@ -20,7 +20,7 @@ export default function usePageViews() {
         "@type": "Organization",
         url: process.env.REACT_APP_URL,
         logo: `${process.env.REACT_APP_URL}/logo512.png`,
-        name: "DenPer",
+        name: "DENPER",
         description:
           "We are a small team of software engineers spread out all across the world, building apps that help and make people better.",
       },
