@@ -170,8 +170,5 @@
    "jsfbt": "Co-Founder"
   }
  ],
- "childParentMappings": {
-  "4": 3,
-  "5": 3
- }
+ "childParentMappings": {}
 }
