@@ -82,9 +82,9 @@ export default function Section() {
               href="https://vpcvdc.github.io/"
               target="_blank"
               rel="noreferrer noopener"
-              className="underline"
+              className="underline uppercase"
             >
-              <fbt desc="caption">Co-Founder</fbt>
+              vpc
             </Link>
           </figcaption>
         </figure>
