@@ -154,6 +154,20 @@
    "project": "",
    "type": "text",
    "jsfbt": "Perakash"
+  },
+  {
+   "hashToText": {
+    "I0PcQMbM1dD9VYRclQYoqw==": "Chakravarthy"
+   },
+   "filepath": "src/components/section/index.js",
+   "line_beg": 87,
+   "col_beg": 14,
+   "line_end": 87,
+   "col_end": 52,
+   "desc": "caption",
+   "project": "",
+   "type": "text",
+   "jsfbt": "Chakravarthy"
   }
  ],
  "childParentMappings": {}
