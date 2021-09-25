@@ -6,6 +6,7 @@ module.exports = {
       [
         "babel-plugin-fbt",
         {
+          fbtCommonPath: join(__dirname, "commonStrings.json"),
           fbtEnumPath: join(__dirname, ".enum_manifest.json"),
           extraOptions: {
             __source: true,

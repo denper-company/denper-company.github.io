@@ -10,7 +10,7 @@
 import { clientsClaim } from "workbox-core";
 import { precacheAndRoute } from "workbox-precaching";
 import { pageCache, imageCache, staticResourceCache } from "workbox-recipes";
-import * as googleAnalytics from "workbox-google-analytics";
+import { initialize } from "workbox-google-analytics";
 
 clientsClaim();
 
@@ -32,5 +32,4 @@ self.addEventListener("message", (event) => {
 pageCache();
 staticResourceCache();
 imageCache();
-
-googleAnalytics.initialize();
+initialize();

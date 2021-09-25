@@ -13,7 +13,7 @@ export default function usePageViews() {
   ] = useLocaleContext();
   useEffect(() => {
     const jsonld = document.createElement("script");
-    jsonld.setAttribute("type", "application/ld+json");
+    jsonld.type = "application/ld+json";
     jsonld.textContent = JSON.stringify([
       {
         "@context": "https://schema.org",
@@ -64,9 +64,9 @@ export default function usePageViews() {
     const localeAlternates = Object.values(LOCALES).reduce(
       (accumulator, { bcp47 }) => {
         const link = document.createElement("link");
-        link.setAttribute("rel", "alternate");
+        link.rel = "alternate";
         link.href = `${url}?lang=${bcp47}`;
-        link.setAttribute("hreflang", bcp47);
+        link.hreflang = bcp47;
         accumulator.push(link);
         return accumulator;
       },
