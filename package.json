@@ -36,7 +36,7 @@
     "@tailwindcss/aspect-ratio": "0.3.0",
     "@tailwindcss/forms": "0.3.4",
     "@tailwindcss/line-clamp": "0.2.2",
-    "@tailwindcss/postcss7-compat": "2.2.16",
+    "@tailwindcss/postcss7-compat": "2.2.17",
     "@tailwindcss/typography": "0.4.1",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.1.2",
@@ -51,7 +51,7 @@
     "prettier": "2.4.1",
     "pretty-quick": "3.1.1",
     "react-scripts": "4.0.3",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@2.2.16"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@2.2.17"
   },
   "scripts": {
     "pretty": "pretty-quick",
