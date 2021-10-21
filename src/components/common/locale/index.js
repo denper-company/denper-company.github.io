@@ -26,7 +26,7 @@ export default function SwitchLocale() {
       icon={<GlobeAltIcon className="h-5" aria-hidden="true" />}
     >
       {Object.entries(LOCALES).map(([key, value]) => (
-        <option key={key} value={value.bcp47}>
+        <option key={key} value={value.bcp47} lang={value.bcp47}>
           {value.displayName}
         </option>
       ))}
