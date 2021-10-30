@@ -29,8 +29,8 @@
     "workbox-window": "6.3.0"
   },
   "devDependencies": {
-    "@babel/core": "7.15.8",
-    "@babel/node": "7.15.8",
+    "@babel/core": "7.16.0",
+    "@babel/node": "7.16.0",
     "@craco/craco": "6.4.0",
     "@fbtjs/default-collection-transform": "0.0.3",
     "@tailwindcss/aspect-ratio": "0.3.0",
