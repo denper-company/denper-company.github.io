@@ -1,11 +1,11 @@
 import { lazy } from "react";
-import { Routes, Route, Navigate, useSearchParams } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useLocaleContext } from "contexts/locale";
 
 const App = lazy(() => import("components/app"));
 
 export default function Router() {
-  const [searchParams] = useSearchParams();
+  const { search } = useLocation();
   useLocaleContext();
   return (
     <Routes>
@@ -16,7 +16,7 @@ export default function Router() {
           <Navigate
             to={{
               pathname: "/",
-              search: `${searchParams}`,
+              search,
             }}
             replace
           />
