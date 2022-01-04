@@ -17,9 +17,4 @@ module.exports = {
       "babel-plugin-fbt-runtime",
     ],
   },
-  style: {
-    postcss: {
-      plugins: [require("tailwindcss"), require("autoprefixer")],
-    },
-  },
 };
