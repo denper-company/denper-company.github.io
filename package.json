@@ -41,7 +41,7 @@
     "@testing-library/react": "12.1.2",
     "@testing-library/react-hooks": "7.0.2",
     "@testing-library/user-event": "13.5.0",
-    "autoprefixer": "10.4.1",
+    "autoprefixer": "10.4.2",
     "babel-plugin-fbt": "0.20.3",
     "babel-plugin-fbt-runtime": "0.9.18",
     "gh-pages": "3.2.3",
