@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://denper.company",
   "dependencies": {
-    "@headlessui/react": "1.4.2",
+    "@headlessui/react": "1.4.3",
     "@heroicons/react": "1.0.5",
     "fbt": "0.16.6",
     "history": "5.2.0",
@@ -50,7 +50,7 @@
     "prettier": "2.5.1",
     "pretty-quick": "3.1.3",
     "react-scripts": "5.0.0",
-    "tailwindcss": "3.0.13"
+    "tailwindcss": "3.0.15"
   },
   "scripts": {
     "pretty": "pretty-quick",
