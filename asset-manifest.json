@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b5eb5da.css",
-    "main.js": "/static/js/main.a6272463.js",
+    "main.css": "/static/css/main.7bb7f370.css",
+    "main.js": "/static/js/main.26028d71.js",
     "static/js/957.c99f7d72.chunk.js": "/static/js/957.c99f7d72.chunk.js",
     "static/js/178.68027e85.chunk.js": "/static/js/178.68027e85.chunk.js",
     "static/js/27.e546e20e.chunk.js": "/static/js/27.e546e20e.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/298.f38be1be.chunk.js": "/static/js/298.f38be1be.chunk.js",
     "static/js/388.c789faf2.chunk.js": "/static/js/388.c789faf2.chunk.js",
     "static/js/684.9a5d97aa.chunk.js": "/static/js/684.9a5d97aa.chunk.js",
-    "static/js/862.e2ec7ba3.chunk.js": "/static/js/862.e2ec7ba3.chunk.js",
+    "static/js/862.b5fe4b0b.chunk.js": "/static/js/862.b5fe4b0b.chunk.js",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.6d32ec265576a81a0a641f7c8922fe22.svg",
     "static/media/avatar.svg": "/static/media/avatar.8d267dee61c4b07a9ac0.svg"
   },
   "entrypoints": [
-    "static/css/main.9b5eb5da.css",
-    "static/js/main.a6272463.js"
+    "static/css/main.7bb7f370.css",
+    "static/js/main.26028d71.js"
   ]
 }
