@@ -967,7 +967,7 @@
 
 @media (prefers-color-scheme: dark) {
   [data-color-scheme="system"] .prose {
-    @apply prose-invert;  
+    @apply prose-invert;
   }
 }
 [data-color-scheme="dark"] .prose,

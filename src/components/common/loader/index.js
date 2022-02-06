@@ -2,8 +2,8 @@ import { ReactComponent as Logo } from "logo.svg";
 
 export default function Loader() {
   return (
-    <div className="flex items-center justify-center min-h-screen animate-pulse">
-      <Logo className="h-16 pointer-events-none" />
+    <div className="flex min-h-screen animate-pulse items-center justify-center">
+      <Logo className="pointer-events-none h-16" />
     </div>
   );
 }

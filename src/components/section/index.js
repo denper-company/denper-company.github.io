@@ -12,8 +12,8 @@ export default function Section() {
     ),
   });
   return (
-    <section className="p-4 flex-auto flex flex-col justify-center items-center gap-4">
-      <article className="mx-auto prose prose-neutral prose-sm sm:prose lg:prose-lg xl:prose-2xl">
+    <section className="flex flex-auto flex-col items-center justify-center gap-4 p-4">
+      <article className="prose prose-sm prose-neutral mx-auto sm:prose lg:prose-lg xl:prose-2xl">
         <h1>
           <fbt desc="greetings">Hello World!</fbt>
         </h1>
@@ -42,10 +42,10 @@ export default function Section() {
           </fbt>
         </p>
       </article>
-      <div className="flex flex-wrap justify-center items-center gap-4 text-center">
+      <div className="flex flex-wrap items-center justify-center gap-4 text-center">
         <figure className="grid gap-2">
           <Img
-            className="animate-pulse w-40 h-40 rounded-full shadow-inner bg-gray1 object-cover bg-cover bg-center bg-no-repeat bg-avatar cursor-zoom-in"
+            className="h-40 w-40 animate-pulse cursor-zoom-in rounded-full bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
             src={`${process.env.PUBLIC_URL}/vdc`}
             width="1920"
             height="2560"
@@ -65,7 +65,7 @@ export default function Section() {
         </figure>
         <figure className="grid gap-2">
           <Img
-            className="animate-pulse w-40 h-40 rounded-full shadow-inner bg-gray1 object-cover bg-cover bg-center bg-no-repeat bg-avatar cursor-zoom-in"
+            className="h-40 w-40 animate-pulse cursor-zoom-in rounded-full bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
             src={`${process.env.PUBLIC_URL}/vpc`}
             width="3024"
             height="4032"

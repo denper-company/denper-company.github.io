@@ -25,12 +25,12 @@ export default function Img(props) {
         <Dialog
           as="div"
           static
-          className="fixed z-10 inset-0 overflow-y-auto"
+          className="fixed inset-0 z-10 overflow-y-auto"
           initialFocus={imgRef}
           open={isOpen}
           onClose={handleClose}
         >
-          <div className="flex items-center justify-center min-h-screen text-center">
+          <div className="flex min-h-screen items-center justify-center text-center">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -43,7 +43,7 @@ export default function Img(props) {
               <Dialog.Overlay className="fixed inset-0" />
             </Transition.Child>
             <span
-              className="inline-block align-middle h-screen"
+              className="inline-block h-screen align-middle"
               aria-hidden="true"
             >
               &#8203;
@@ -57,12 +57,12 @@ export default function Img(props) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block align-middle overflow-hidden transform transition-all">
+              <div className="inline-block transform overflow-hidden align-middle transition-all">
                 <picture>
                   <source srcSet={`${props.src}.avif`} type="image/avif" />
                   <source srcSet={`${props.src}.webp`} type="image/webp" />
                   <img
-                    className="animate-pulse overflow-hidden mx-auto max-w-screen max-h-screen shadow-inner bg-gray1 object-cover bg-cover bg-center bg-no-repeat bg-avatar cursor-zoom-out"
+                    className="max-w-screen mx-auto max-h-screen animate-pulse cursor-zoom-out overflow-hidden bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
                     src={`${props.src}.jpg`}
                     alt={props.alt}
                     width={props.width}

@@ -6,7 +6,7 @@ export default function ErrorUI({ error = "", retry = () => {} }) {
     fatal: true,
   });
   return (
-    <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
+    <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
       <p>
         Something went wrong on our side, we already received the error and our
         team is working on it. If it's urgent, contact our support at

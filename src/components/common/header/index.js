@@ -4,9 +4,9 @@ import { ReactComponent as Logo } from "logo.svg";
 
 export default function Header() {
   return (
-    <header className="p-4 gap-4 flex-none flex flex-wrap items-center justify-between">
+    <header className="flex flex-none flex-wrap items-center justify-between gap-4 p-4">
       <Logo className="h-12" />
-      <nav className="gap-4 inline-flex flex-wrap items-center">
+      <nav className="inline-flex flex-wrap items-center gap-4">
         <SwitchLocale />
         <SwitchTheme />
       </nav>

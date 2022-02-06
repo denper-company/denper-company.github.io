@@ -5,7 +5,7 @@ const Section = lazy(() => import("components/section"));
 
 export default function Main() {
   return (
-    <main className="mx-auto max-w-screen-2xl min-h-screen flex flex-col">
+    <main className="mx-auto flex min-h-screen max-w-screen-2xl flex-col">
       <Header />
       <Section />
     </main>
