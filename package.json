@@ -29,7 +29,7 @@
     "workbox-window": "6.4.2"
   },
   "devDependencies": {
-    "@babel/core": "7.17.4",
+    "@babel/core": "7.17.5",
     "@babel/node": "7.16.8",
     "@craco/craco": "6.4.3",
     "@fbtjs/default-collection-transform": "0.0.3",
