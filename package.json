@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://denper.company",
   "dependencies": {
-    "@headlessui/react": "1.4.3",
+    "@headlessui/react": "1.5.0",
     "@heroicons/react": "1.0.5",
     "fbt": "0.16.6",
     "history": "5.2.0",
