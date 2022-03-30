@@ -1,16 +1,15 @@
 import "react-app-polyfill/stable";
 import { StrictMode } from "react";
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import "index.css";
 import Root from "components/root";
 import { isProduction } from "environment";
 import reportWebVitals, { gtag } from "reportWebVitals";
 
-render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Root />
-  </StrictMode>,
-  document.getElementById("root")
+  </StrictMode>
 );
 
 (async () => {
