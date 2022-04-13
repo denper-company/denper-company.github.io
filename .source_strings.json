@@ -1,28 +1,56 @@
 {
  "phrases": [
   {
-   "hashToText": {
-    "9Rg/KdDoTjDth+K1z2+3DA==": "system",
-    "IVYu9iBLW5/ayi4irDWDvQ==": "light",
-    "ofpoNYNCfvqV0VEa3tfJnQ==": "dark",
-    "+UAmSqWRfScBSA9mOCDUaw==": "cool",
-    "sfI0f1ZnQVe1PeGSHI/I8w==": "warm"
+   "hashToLeaf": {
+    "9Rg/KdDoTjDth+K1z2+3DA==": {
+     "text": "system",
+     "desc": "theme"
+    },
+    "IVYu9iBLW5/ayi4irDWDvQ==": {
+     "text": "light",
+     "desc": "theme"
+    },
+    "ofpoNYNCfvqV0VEa3tfJnQ==": {
+     "text": "dark",
+     "desc": "theme"
+    },
+    "+UAmSqWRfScBSA9mOCDUaw==": {
+     "text": "cool",
+     "desc": "theme"
+    },
+    "sfI0f1ZnQVe1PeGSHI/I8w==": {
+     "text": "warm",
+     "desc": "theme"
+    }
    },
    "filepath": "src/components/common/theme/index.js",
    "line_beg": 32,
    "col_beg": 10,
    "line_end": 34,
    "col_end": 16,
-   "desc": "theme",
    "project": "",
-   "type": "table",
    "jsfbt": {
     "t": {
-     "0": "system",
-     "1": "light",
-     "2": "dark",
-     "3": "cool",
-     "4": "warm"
+     "0": {
+      "desc": "theme",
+      "text": "system"
+     },
+     "1": {
+      "desc": "theme",
+      "text": "light"
+     },
+     "2": {
+      "desc": "theme",
+      "text": "dark"
+     },
+     "3": {
+      "desc": "theme",
+      "text": "cool"
+     },
+     "4": {
+      "desc": "theme",
+      "text": "warm"
+     }
     },
     "m": [
      null
@@ -30,144 +58,218 @@
    }
   },
   {
-   "hashToText": {
-    "HF7XHupliu9DZD91AhFjZg==": "DENPER Company"
+   "hashToLeaf": {
+    "HF7XHupliu9DZD91AhFjZg==": {
+     "text": "DENPER Company",
+     "desc": "title"
+    }
    },
    "filepath": "src/components/section/index.js",
    "line_beg": 8,
    "col_beg": 11,
    "line_end": 8,
    "col_end": 41,
-   "desc": "title",
    "project": "",
-   "type": "text",
-   "jsfbt": "DENPER Company"
+   "jsfbt": {
+    "t": {
+     "desc": "title",
+     "text": "DENPER Company"
+    },
+    "m": []
+   }
   },
   {
-   "hashToText": {
-    "Q4TwVYHHqk8luYuAAR1lcg==": "We are a small team of software engineers spread out all across the world, building apps that help and make people better."
+   "hashToLeaf": {
+    "Q4TwVYHHqk8luYuAAR1lcg==": {
+     "text": "We are a small team of software engineers spread out all across the world, building apps that help and make people better.",
+     "desc": "description"
+    }
    },
    "filepath": "src/components/section/index.js",
    "line_beg": 9,
    "col_beg": 17,
    "line_end": 12,
    "col_end": 5,
-   "desc": "description",
    "project": "",
-   "type": "text",
-   "jsfbt": "We are a small team of software engineers spread out all across the world, building apps that help and make people better."
+   "jsfbt": {
+    "t": {
+     "desc": "description",
+     "text": "We are a small team of software engineers spread out all across the world, building apps that help and make people better."
+    },
+    "m": []
+   }
   },
   {
-   "hashToText": {
-    "ZgMHzTmGQX+VBDiK0Y0qgg==": "Hello World!"
+   "hashToLeaf": {
+    "ZgMHzTmGQX+VBDiK0Y0qgg==": {
+     "text": "Hello World!",
+     "desc": "greetings"
+    }
    },
    "filepath": "src/components/section/index.js",
    "line_beg": 18,
    "col_beg": 10,
    "line_end": 18,
    "col_end": 50,
-   "desc": "greetings",
    "project": "",
-   "type": "text",
-   "jsfbt": "Hello World!"
+   "jsfbt": {
+    "t": {
+     "desc": "greetings",
+     "text": "Hello World!"
+    },
+    "m": []
+   }
   },
   {
-   "hashToText": {
-    "9NQlkthjn1d4AlrxbHTFnQ==": "We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are {=AllyFile} and {=AllyWeds}."
+   "hashToLeaf": {
+    "9NQlkthjn1d4AlrxbHTFnQ==": {
+     "text": "We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are {=AllyFile} and {=AllyWeds}.",
+     "desc": "description"
+    }
    },
    "filepath": "src/components/section/index.js",
    "line_beg": 21,
    "col_beg": 10,
    "line_end": 42,
    "col_end": 16,
-   "desc": "description",
    "project": "",
-   "type": "text",
-   "jsfbt": "We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are {=AllyFile} and {=AllyWeds}."
+   "jsfbt": {
+    "t": {
+     "desc": "description",
+     "text": "We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are {=AllyFile} and {=AllyWeds}.",
+     "tokenAliases": {
+      "=AllyFile": "=m2",
+      "=AllyWeds": "=m6"
+     }
+    },
+    "m": []
+   }
   },
   {
-   "hashToText": {
-    "zrnWJ7tNdbnqEfmF5xXRdQ==": "AllyFile"
+   "hashToLeaf": {
+    "vrGTIDvOfczeosBLv/0h/w==": {
+     "text": "AllyFile",
+     "desc": "In the phrase: \"We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are {=AllyFile} and {=AllyWeds}.\""
+    }
    },
    "filepath": "src/components/section/index.js",
    "line_beg": 25,
    "col_beg": 12,
    "line_end": 32,
    "col_end": 19,
-   "desc": "In the phrase: \"We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are{=AllyFile} and{=AllyWeds}.\"",
    "project": "",
-   "type": "text",
-   "jsfbt": "AllyFile"
+   "jsfbt": {
+    "t": {
+     "desc": "In the phrase: \"We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are {=AllyFile} and {=AllyWeds}.\"",
+     "text": "AllyFile"
+    },
+    "m": []
+   }
   },
   {
-   "hashToText": {
-    "0uobHfmILCTyTjQ5qdf07Q==": "AllyWeds"
+   "hashToLeaf": {
+    "bbLOdWYHhkusz9lAkIlu0g==": {
+     "text": "AllyWeds",
+     "desc": "In the phrase: \"We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are {=AllyFile} and {=AllyWeds}.\""
+    }
    },
    "filepath": "src/components/section/index.js",
    "line_beg": 34,
    "col_beg": 12,
    "line_end": 41,
    "col_end": 19,
-   "desc": "In the phrase: \"We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are{=AllyFile} and{=AllyWeds}.\"",
    "project": "",
-   "type": "text",
-   "jsfbt": "AllyWeds"
+   "jsfbt": {
+    "t": {
+     "desc": "In the phrase: \"We are a small team of software engineers spread out all across the world, building apps that help and make people better. Our products are {=AllyFile} and {=AllyWeds}.\"",
+     "text": "AllyWeds"
+    },
+    "m": []
+   }
   },
   {
-   "hashToText": {
-    "cUX4TmyHK2oBPMxG2iGV4w==": "Denesh"
+   "hashToLeaf": {
+    "cUX4TmyHK2oBPMxG2iGV4w==": {
+     "text": "Denesh",
+     "desc": "name"
+    }
    },
    "filepath": "src/components/section/index.js",
    "line_beg": 59,
    "col_beg": 14,
    "line_end": 59,
    "col_end": 43,
-   "desc": "name",
    "project": "",
-   "type": "text",
-   "jsfbt": "Denesh"
+   "jsfbt": {
+    "t": {
+     "desc": "name",
+     "text": "Denesh"
+    },
+    "m": []
+   }
   },
   {
-   "hashToText": {
-    "l6ks8MY59IvLUQOYPe6OXA==": "Founder"
+   "hashToLeaf": {
+    "l6ks8MY59IvLUQOYPe6OXA==": {
+     "text": "Founder",
+     "desc": "caption"
+    }
    },
    "filepath": "src/components/section/index.js",
    "line_beg": 62,
    "col_beg": 14,
    "line_end": 62,
    "col_end": 47,
-   "desc": "caption",
    "project": "",
-   "type": "text",
-   "jsfbt": "Founder"
+   "jsfbt": {
+    "t": {
+     "desc": "caption",
+     "text": "Founder"
+    },
+    "m": []
+   }
   },
   {
-   "hashToText": {
-    "P/U+GW7v/s7qiEe9PmIvjw==": "Perakash"
+   "hashToLeaf": {
+    "P/U+GW7v/s7qiEe9PmIvjw==": {
+     "text": "Perakash",
+     "desc": "name"
+    }
    },
    "filepath": "src/components/section/index.js",
    "line_beg": 79,
    "col_beg": 14,
    "line_end": 79,
    "col_end": 45,
-   "desc": "name",
    "project": "",
-   "type": "text",
-   "jsfbt": "Perakash"
+   "jsfbt": {
+    "t": {
+     "desc": "name",
+     "text": "Perakash"
+    },
+    "m": []
+   }
   },
   {
-   "hashToText": {
-    "I0PcQMbM1dD9VYRclQYoqw==": "Chakravarthy"
+   "hashToLeaf": {
+    "I0PcQMbM1dD9VYRclQYoqw==": {
+     "text": "Chakravarthy",
+     "desc": "caption"
+    }
    },
    "filepath": "src/components/section/index.js",
    "line_beg": 87,
    "col_beg": 14,
    "line_end": 87,
    "col_end": 52,
-   "desc": "caption",
    "project": "",
-   "type": "text",
-   "jsfbt": "Chakravarthy"
+   "jsfbt": {
+    "t": {
+     "desc": "caption",
+     "text": "Chakravarthy"
+    },
+    "m": []
+   }
   }
  ],
  "childParentMappings": {
