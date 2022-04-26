@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.48490247.css",
-    "main.js": "/static/js/main.71182b78.js",
+    "main.js": "/static/js/main.1f8b7b8f.js",
     "static/js/957.1b1f79dd.chunk.js": "/static/js/957.1b1f79dd.chunk.js",
     "static/js/178.4b1250d4.chunk.js": "/static/js/178.4b1250d4.chunk.js",
     "static/js/27.9c0d7a44.chunk.js": "/static/js/27.9c0d7a44.chunk.js",
     "static/js/446.0e909770.chunk.js": "/static/js/446.0e909770.chunk.js",
-    "static/js/702.d0fff989.chunk.js": "/static/js/702.d0fff989.chunk.js",
+    "static/js/702.911b8789.chunk.js": "/static/js/702.911b8789.chunk.js",
     "static/js/339.fe791095.chunk.js": "/static/js/339.fe791095.chunk.js",
-    "static/js/388.1323e04d.chunk.js": "/static/js/388.1323e04d.chunk.js",
-    "static/js/499.2bae33bd.chunk.js": "/static/js/499.2bae33bd.chunk.js",
+    "static/js/388.57d148d4.chunk.js": "/static/js/388.57d148d4.chunk.js",
+    "static/js/94.21d3f397.chunk.js": "/static/js/94.21d3f397.chunk.js",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.6d32ec265576a81a0a641f7c8922fe22.svg",
@@ -17,6 +17,6 @@
   },
   "entrypoints": [
     "static/css/main.48490247.css",
-    "static/js/main.71182b78.js"
+    "static/js/main.1f8b7b8f.js"
   ]
 }
