@@ -15,10 +15,10 @@ gtag("config", process.env.REACT_APP_MEASUREMENT_ID);
 
 const reportWebVitals = (onPerfEntry) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    import("web-vitals").then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+    import("web-vitals").then(({ getCLS, getFCP, getFID, getLCP, getTTFB }) => {
       getCLS(onPerfEntry);
-      getFID(onPerfEntry);
       getFCP(onPerfEntry);
+      getFID(onPerfEntry);
       getLCP(onPerfEntry);
       getTTFB(onPerfEntry);
     });
