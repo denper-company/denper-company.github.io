@@ -5,7 +5,7 @@ import { GlobeAltIcon } from "@heroicons/react/outline";
 import Select from "components/common/select";
 
 export default function SwitchLocale() {
-  const [, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [
     {
       context: { locale },
@@ -13,9 +13,14 @@ export default function SwitchLocale() {
   ] = useLocaleContext();
   const handleChange = useCallback(
     ({ target: { value } }) => {
-      setSearchParams({
-        lang: value,
-      });
+      if (value === "en") {
+        searchParams.delete("lang");
+        setSearchParams(searchParams);
+      } else {
+        setSearchParams({
+          lang: value,
+        });
+      }
     },
     [setSearchParams]
   );

@@ -65,7 +65,7 @@ export default function usePageViews() {
       (accumulator, { bcp47 }) => {
         const link = document.createElement("link");
         link.rel = "alternate";
-        link.href = `${url}?lang=${bcp47}`;
+        link.href = bcp47 === "en" ? url : `${url}?lang=${bcp47}`;
         link.hreflang = bcp47;
         accumulator.push(link);
         return accumulator;

@@ -6,7 +6,7 @@ import { gtag } from "reportWebVitals";
 
 export default function useLocale() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const lang = searchParams.get("lang");
+  const lang = searchParams.get("lang") ?? "en";
   const [state, setState] = useState(() => ({
     context: {
       locale: "en",
