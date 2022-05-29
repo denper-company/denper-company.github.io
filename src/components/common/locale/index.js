@@ -22,7 +22,7 @@ export default function SwitchLocale() {
         });
       }
     },
-    [setSearchParams]
+    [searchParams, setSearchParams]
   );
   return (
     <Select
