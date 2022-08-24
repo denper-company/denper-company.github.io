@@ -1,7 +1,8 @@
+import fbt from "fbt";
 import { useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import { LOCALES, useLocaleContext } from "contexts/locale";
-import { GlobeAltIcon } from "@heroicons/react/outline";
+import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import Select from "components/common/select";
 
 export default function SwitchLocale() {
@@ -29,6 +30,8 @@ export default function SwitchLocale() {
       value={LOCALES[locale].bcp47}
       onChange={handleChange}
       icon={<GlobeAltIcon className="h-5" aria-hidden="true" />}
+      aria-label={fbt("Language", "label")}
+      title={fbt("Language", "label")}
     >
       {Object.entries(LOCALES).map(([key, value]) => (
         <option key={key} value={value.bcp47} lang={value.bcp47}>

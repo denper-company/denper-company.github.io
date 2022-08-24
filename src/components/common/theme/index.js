@@ -1,6 +1,6 @@
 import fbt from "fbt";
 import { useCallback, useEffect, useState } from "react";
-import { ColorSwatchIcon } from "@heroicons/react/outline";
+import { SwatchIcon } from "@heroicons/react/24/outline";
 import Select from "components/common/select";
 import themeOptions from "enums/Theme$FbtEnum";
 
@@ -24,8 +24,10 @@ export default function SwitchTheme() {
     <Select
       value={theme}
       onChange={handleChange}
-      icon={<ColorSwatchIcon className="h-5" aria-hidden="true" />}
+      icon={<SwatchIcon className="h-5" aria-hidden="true" />}
       className="capitalize"
+      aria-label={fbt("Theme", "label")}
+      title={fbt("Theme", "label")}
     >
       {themeOptions.map((option, index) => (
         <option key={option} value={option}>
