@@ -9,26 +9,31 @@ import Loader from "components/common/loader";
 
 const Root = lazy(() => import("components/root"));
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorUI />,
+  },
+  {
+    path: "*",
+    element: (
+      <Navigate
+        to={{
+          pathname: "/",
+          search: window.location.search,
+        }}
+        replace
+      />
+    ),
+  },
+]);
+
+if (import.meta.hot) {
+  import.meta.hot.dispose(() => router.dispose());
+}
+
 export default function Router() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Root />,
-      errorElement: <ErrorUI />,
-    },
-    {
-      path: "*",
-      element: (
-        <Navigate
-          to={{
-            pathname: "/",
-            search: window.location.search,
-          }}
-          replace
-        />
-      ),
-    },
-  ]);
   return (
     <Suspense fallback={<Loader />}>
       <RouterProvider router={router} fallbackElement={<Loader />} />
