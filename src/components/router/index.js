@@ -1,27 +1,37 @@
-import { lazy } from "react";
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-import { useLocaleContext } from "contexts/locale";
+import { lazy, Suspense } from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
+import ErrorUI from "components/common/error/ui";
+import Loader from "components/common/loader";
 
-const App = lazy(() => import("components/app"));
+const Root = lazy(() => import("components/root"));
 
 export default function Router() {
-  const { search } = useLocation();
-  useLocaleContext();
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Root />,
+      errorElement: <ErrorUI />,
+    },
+    {
+      path: "*",
+      element: (
+        <Navigate
+          to={{
+            pathname: "/",
+            search: window.location.search,
+          }}
+          replace
+        />
+      ),
+    },
+  ]);
   return (
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route
-        path="*"
-        element={
-          <Navigate
-            to={{
-              pathname: "/",
-              search,
-            }}
-            replace
-          />
-        }
-      />
-    </Routes>
+    <Suspense fallback={<Loader />}>
+      <RouterProvider router={router} fallbackElement={<Loader />} />
+    </Suspense>
   );
 }

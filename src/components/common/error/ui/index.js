@@ -1,6 +1,8 @@
+import { useRouteError } from "react-router-dom";
 import { gtag } from "reportWebVitals";
 
-export default function ErrorUI({ error = "", retry = () => {} }) {
+export default function ErrorUI() {
+  const error = useRouteError();
   gtag("event", "exception", {
     description: error?.message ?? error,
     fatal: true,
@@ -20,7 +22,7 @@ export default function ErrorUI({ error = "", retry = () => {} }) {
         </a>
         .
       </p>
-      <button onClick={retry} className="underline">
+      <button onClick={() => window.location.reload()} className="underline">
         Retry
       </button>
     </div>
