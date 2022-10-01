@@ -50,7 +50,6 @@ export default function Section() {
             width="1920"
             height="2560"
             alt="VDC"
-            decoding="async"
             loading="lazy"
             onLoad={(event) => event.target.classList.add("animate-none")}
           />
@@ -70,7 +69,6 @@ export default function Section() {
             width="3024"
             height="4032"
             alt="VPC"
-            decoding="async"
             loading="lazy"
             onLoad={(event) => event.target.classList.add("animate-none")}
           />

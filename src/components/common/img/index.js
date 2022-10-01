@@ -67,7 +67,6 @@ export default function Img(props) {
                     alt={props.alt}
                     width={props.width}
                     height={props.height}
-                    decoding="async"
                     loading="lazy"
                     ref={imgRef}
                     onClick={handleClose}
