@@ -9,7 +9,7 @@
     "static/js/446.56d0d1a1.chunk.js": "/static/js/446.56d0d1a1.chunk.js",
     "static/js/214.d8d599fc.chunk.js": "/static/js/214.d8d599fc.chunk.js",
     "static/js/388.9652bdca.chunk.js": "/static/js/388.9652bdca.chunk.js",
-    "static/js/527.cb306dba.js": "/static/js/527.cb306dba.js",
+    "static/js/527.e07d13fc.js": "/static/js/527.e07d13fc.js",
     "static/js/709.d01a7213.chunk.js": "/static/js/709.d01a7213.chunk.js",
     "static/js/670.6071f311.chunk.js": "/static/js/670.6071f311.chunk.js",
     "service-worker.js": "/service-worker.js",
@@ -18,7 +18,7 @@
     "static/media/avatar.svg": "/static/media/avatar.8d267dee61c4b07a9ac0.svg"
   },
   "entrypoints": [
-    "static/js/527.cb306dba.js",
+    "static/js/527.e07d13fc.js",
     "static/css/main.b03b6d7b.css",
     "static/js/main.b82ef416.js"
   ]
