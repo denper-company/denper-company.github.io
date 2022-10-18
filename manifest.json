@@ -6,35 +6,57 @@
   "lang": "en",
   "icons": [
     {
-      "src": "favicon.png",
-      "type": "image/png",
-      "sizes": "64x64",
-      "purpose": "any"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any"
-    },
-    {
-      "src": "logo512.png",
+      "src": "splash.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "maskable.png",
-      "type": "image/png",
-      "sizes": "512x512",
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
       "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/mobile.avif",
+      "sizes": "850x1440",
+      "type": "image/avif",
+      "platform": "narrow",
+      "label": "Mobile screenshot"
+    },
+    {
+      "src": "screenshots/laptop.avif",
+      "sizes": "2880x1440",
+      "type": "image/avif",
+      "platform": "wide",
+      "label": "Laptop screenshot"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tamil language",
+      "short_name": "Tamil",
+      "description": "Tamil translation",
+      "url": "/?lang=ta",
+      "icons": [
+        { "src": "favicon.svg", "type": "image/svg+xml", "sizes": "150x150" }
+      ]
     }
   ],
   "scope": ".",
   "start_url": ".",
-  "display": "fullscreen",
-  "theme_color": "black",
-  "background_color": "white",
+  "display_override": ["fullscreen", "minimal-ui"],
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
   "orientation": "any",
   "categories": ["business"],
   "related_applications": [
