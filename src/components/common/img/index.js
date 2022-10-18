@@ -19,7 +19,7 @@ export default function Img(props) {
       <picture onClick={handleOpen}>
         <source srcSet={`${props.src}.avif`} type="image/avif" />
         <source srcSet={`${props.src}.webp`} type="image/webp" />
-        <img {...props} src={`${props.src}.jpg`} alt={props.alt} />
+        <img {...props} src={`${props.src}.jpeg`} alt={props.alt} />
       </picture>
       <Transition.Root show={isOpen} as={Fragment}>
         <Dialog
@@ -63,7 +63,7 @@ export default function Img(props) {
                   <source srcSet={`${props.src}.webp`} type="image/webp" />
                   <img
                     className="max-w-screen mx-auto max-h-screen animate-pulse cursor-zoom-out overflow-hidden bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
-                    src={`${props.src}.jpg`}
+                    src={`${props.src}.jpeg`}
                     alt={props.alt}
                     width={props.width}
                     height={props.height}
