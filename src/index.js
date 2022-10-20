@@ -15,6 +15,9 @@ createRoot(document.getElementById("root")).render(
 (async () => {
   try {
     if (isProduction) {
+      Array.from(document.head.querySelectorAll('[media="print"]')).forEach(
+        (stylesheet) => (stylesheet.media = "all")
+      );
       // If you want to start measuring performance in your app, pass a function
       // to log results (for example: reportWebVitals(console.log))
       // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
@@ -52,6 +55,10 @@ createRoot(document.getElementById("root")).render(
           }
         });
         await wb.register();
+        const link = document.createElement("link");
+        link.rel = "manifest";
+        link.href = `${process.env.PUBLIC_URL}/manifest.json`;
+        document.head.appendChild(link);
       }
     }
   } catch (error) {
