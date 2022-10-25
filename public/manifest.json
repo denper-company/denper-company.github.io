@@ -6,21 +6,15 @@
   "lang": "en",
   "icons": [
     {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
       "src": "splash.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "any"
-    },
-    {
-      "src": "favicon.svg",
-      "type": "image/svg+xml",
-      "sizes": "any",
-      "purpose": "any"
-    },
-    {
-      "src": "favicon.svg",
-      "type": "image/svg+xml",
-      "sizes": "any",
       "purpose": "maskable"
     }
   ],
@@ -47,7 +41,12 @@
       "description": "Tamil translation",
       "url": "/?lang=ta",
       "icons": [
-        { "src": "favicon.svg", "type": "image/svg+xml", "sizes": "150x150" }
+        {
+          "src": "splash.png",
+          "type": "image/png",
+          "sizes": "512x512",
+          "purpose": "maskable"
+        }
       ]
     }
   ],
