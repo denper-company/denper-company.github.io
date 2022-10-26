@@ -6,22 +6,16 @@
   "lang": "en",
   "icons": [
     {
-      "src": "favicon.svg",
-      "type": "image/svg+xml",
-      "sizes": "any",
-      "purpose": "any"
-    },
-    {
       "src": "apple-touch-icon.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "splash.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ],
   "screenshots": [
@@ -48,9 +42,10 @@
       "url": "/?lang=ta",
       "icons": [
         {
-          "src": "favicon.svg",
-          "type": "image/svg+xml",
-          "sizes": "150x150"
+          "src": "apple-touch-icon.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "purpose": "any maskable"
         }
       ]
     }
