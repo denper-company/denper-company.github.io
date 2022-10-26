@@ -9,13 +9,13 @@
       "src": "apple-touch-icon.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "splash.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     }
   ],
   "screenshots": [
@@ -44,8 +44,7 @@
         {
           "src": "apple-touch-icon.png",
           "type": "image/png",
-          "sizes": "192x192",
-          "purpose": "any maskable"
+          "sizes": "192x192"
         }
       ]
     }
