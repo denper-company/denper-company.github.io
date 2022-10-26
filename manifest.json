@@ -12,10 +12,15 @@
       "purpose": "any"
     },
     {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
       "src": "splash.png",
       "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
+      "sizes": "512x512"
     }
   ],
   "screenshots": [
@@ -42,10 +47,9 @@
       "url": "/?lang=ta",
       "icons": [
         {
-          "src": "splash.png",
-          "type": "image/png",
-          "sizes": "512x512",
-          "purpose": "maskable"
+          "src": "favicon.svg",
+          "type": "image/svg+xml",
+          "sizes": "150x150"
         }
       ]
     }
