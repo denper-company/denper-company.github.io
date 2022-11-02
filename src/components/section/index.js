@@ -13,7 +13,7 @@ export default function Section() {
   });
   return (
     <section className="flex flex-auto flex-col items-center justify-center gap-4 p-4">
-      <article className="prose prose-sm prose-neutral mx-auto sm:prose lg:prose-lg xl:prose-2xl">
+      <article className="prose-sm prose prose-neutral mx-auto sm:prose lg:prose-lg xl:prose-2xl">
         <h1>
           <fbt desc="greetings">Hello World!</fbt>
         </h1>
@@ -47,8 +47,10 @@ export default function Section() {
           <Img
             className="h-40 w-40 animate-pulse cursor-zoom-in rounded-full bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
             src={`${process.env.PUBLIC_URL}/vdc`}
-            width="1920"
-            height="2560"
+            width="120"
+            height="160"
+            data-width="1920"
+            data-height="2560"
             alt="VDC"
             loading="lazy"
             onLoad={(event) => event.target.classList.add("animate-none")}
@@ -66,8 +68,10 @@ export default function Section() {
           <Img
             className="h-40 w-40 animate-pulse cursor-zoom-in rounded-full bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
             src={`${process.env.PUBLIC_URL}/vpc`}
-            width="3024"
-            height="4032"
+            width="120"
+            height="160"
+            data-width="3024"
+            data-height="4032"
             alt="VPC"
             loading="lazy"
             onLoad={(event) => event.target.classList.add("animate-none")}
