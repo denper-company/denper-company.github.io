@@ -16,8 +16,25 @@ createRoot(document.getElementById("root")).render(
   try {
     if (isProduction) {
       Array.from(document.head.querySelectorAll('[media="print"]')).forEach(
-        (print) => (print.media = "all")
+        (query) => (query.media = "all")
       );
+      if ("serviceWorker" in navigator) {
+        const { Workbox } = await import("workbox-window");
+        const wb = new Workbox(`${process.env.PUBLIC_URL}/service-worker.js`);
+        const skipWaiting = () => {
+          wb.addEventListener("controlling", () => {
+            window.location.reload();
+          });
+          wb.messageSkipWaiting();
+        };
+        wb.addEventListener("waiting", skipWaiting);
+        document.addEventListener("visibilitychange", async () => {
+          if (document.visibilityState === "visible") {
+            await wb.update();
+          }
+        });
+        await wb.register();
+      }
       // If you want to start measuring performance in your app, pass a function
       // to log results (for example: reportWebVitals(console.log))
       // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
@@ -39,23 +56,6 @@ createRoot(document.getElementById("root")).render(
           // ...
         });
       });
-      if ("serviceWorker" in navigator) {
-        const { Workbox } = await import("workbox-window");
-        const wb = new Workbox(`${process.env.PUBLIC_URL}/service-worker.js`);
-        const skipWaiting = () => {
-          wb.addEventListener("controlling", () => {
-            window.location.reload();
-          });
-          wb.messageSkipWaiting();
-        };
-        wb.addEventListener("waiting", skipWaiting);
-        document.addEventListener("visibilitychange", async () => {
-          if (document.visibilityState === "visible") {
-            await wb.update();
-          }
-        });
-        await wb.register();
-      }
     }
   } catch (error) {
     gtag("event", "exception", {
