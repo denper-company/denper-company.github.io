@@ -6,18 +6,19 @@ import Router from "components/router";
 import { isProduction } from "environment";
 import reportWebVitals, { gtag } from "reportWebVitals";
 
+Array.from(document.head.querySelectorAll('[media="print"]')).forEach(
+  (query) => (query.media = "all")
+);
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Router />
   </StrictMode>
 );
 
-(async () => {
+setTimeout(async () => {
   try {
     if (isProduction) {
-      Array.from(document.head.querySelectorAll('[media="print"]')).forEach(
-        (query) => (query.media = "all")
-      );
       if ("serviceWorker" in navigator) {
         const { Workbox } = await import("workbox-window");
         const wb = new Workbox(`${process.env.PUBLIC_URL}/service-worker.js`);
@@ -62,4 +63,4 @@ createRoot(document.getElementById("root")).render(
       description: error?.message ?? error,
     });
   }
-})();
+}, 0);
