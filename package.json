@@ -62,7 +62,7 @@
     "start": "craco start",
     "prebuild": "npm run fbt",
     "build": "craco build",
-    "postbuild": "sed -i '' '/defer/s/=\"defer\"/ /ig;s/rel=\"stylesheet\"/rel=\"stylesheet\" media=\"print\"/ig' build/index.html",
+    "postbuild": "sed -i '' 's/defer=\"defer\"/defer/ig;s/rel=\"stylesheet\"/rel=\"stylesheet\" media=\"print\"/ig' build/index.html",
     "serve": "serve -s build",
     "test": "craco test",
     "eject": "react-scripts eject"
