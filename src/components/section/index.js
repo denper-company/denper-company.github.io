@@ -13,7 +13,7 @@ export default function Section() {
   });
   return (
     <section className="flex flex-auto flex-col items-center justify-center gap-4 p-4">
-      <article className="prose-sm prose prose-neutral mx-auto sm:prose lg:prose-lg xl:prose-2xl">
+      <article className="prose prose-sm prose-neutral mx-auto sm:prose lg:prose-lg xl:prose-2xl">
         <h1>
           <fbt desc="greetings">Hello World!</fbt>
         </h1>
@@ -45,10 +45,11 @@ export default function Section() {
       <div className="flex flex-wrap items-center justify-center gap-4 text-center">
         <figure className="grid gap-2">
           <Img
-            className="h-40 w-40 animate-pulse cursor-zoom-in rounded-full bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
+            className="aspect-auto h-40 w-40 animate-pulse cursor-zoom-in rounded-full bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
             src={`${process.env.PUBLIC_URL}/vdc`}
             width="1920"
             height="2560"
+            sizes="50vw"
             alt="VDC"
             loading="lazy"
             onLoad={(event) => event.target.classList.add("animate-none")}
@@ -64,10 +65,11 @@ export default function Section() {
         </figure>
         <figure className="grid gap-2">
           <Img
-            className="h-40 w-40 animate-pulse cursor-zoom-in rounded-full bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
+            className="aspect-auto h-40 w-40 animate-pulse cursor-zoom-in rounded-full bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
             src={`${process.env.PUBLIC_URL}/vpc`}
             width="3024"
             height="4032"
+            sizes="50vw"
             alt="VPC"
             loading="lazy"
             onLoad={(event) => event.target.classList.add("animate-none")}

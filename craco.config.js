@@ -1,5 +1,5 @@
-const { join } = require("path");
 const crypto = require("crypto");
+const { join } = require("path");
 
 module.exports = {
   babel: {
