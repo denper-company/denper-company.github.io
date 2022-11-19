@@ -13,7 +13,7 @@ export default function Section() {
   });
   return (
     <section className="flex flex-auto flex-col items-center justify-center gap-4 p-4">
-      <article className="prose prose-sm prose-neutral mx-auto sm:prose lg:prose-lg xl:prose-2xl">
+      <article className="prose prose-sm prose-neutral mx-auto lg:prose-lg xl:prose-2xl">
         <h1>
           <fbt desc="greetings">Hello World!</fbt>
         </h1>
