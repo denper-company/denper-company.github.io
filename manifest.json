@@ -6,7 +6,7 @@
   "lang": "en",
   "icons": [
     {
-      "src": "favicon.svg",
+      "src": "icon.svg",
       "type": "image/svg+xml",
       "sizes": "any",
       "purpose": "any"
@@ -26,18 +26,11 @@
   ],
   "screenshots": [
     {
-      "src": "screenshots/mobile.avif",
-      "sizes": "850x1440",
+      "src": "iphone.avif",
+      "sizes": "1409x2862",
       "type": "image/avif",
       "platform": "narrow",
-      "label": "Mobile screenshot"
-    },
-    {
-      "src": "screenshots/laptop.avif",
-      "sizes": "2880x1440",
-      "type": "image/avif",
-      "platform": "wide",
-      "label": "Laptop screenshot"
+      "label": "iPhone screenshot"
     }
   ],
   "shortcuts": [
