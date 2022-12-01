@@ -19,7 +19,7 @@ export default function usePageViews() {
         "@context": "https://schema.org",
         "@type": "Organization",
         url: process.env.REACT_APP_URL,
-        logo: `${process.env.REACT_APP_URL}/favicon.svg`,
+        logo: `${process.env.REACT_APP_URL}/icon.svg`,
         name: "DENPER",
         description:
           "We are a small team of software engineers spread out all across the world, building apps that help and make people better.",
