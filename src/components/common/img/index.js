@@ -43,11 +43,11 @@ export default function Img(props) {
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
-                enterFrom="opacity-0 scale-95"
-                enterTo="opacity-100 scale-100"
+                enterFrom="opacity-0 scale-95 transform-gpu"
+                enterTo="opacity-100 scale-100 transform-gpu"
                 leave="ease-in duration-200"
-                leaveFrom="opacity-100 scale-100"
-                leaveTo="opacity-0 scale-95"
+                leaveFrom="opacity-100 scale-100 transform-gpu"
+                leaveTo="opacity-0 scale-95 transform-gpu"
               >
                 <Dialog.Panel className="overflow-hidden align-middle shadow-xl transition-all">
                   <Dialog.Title as="h2" className="sr-only">
