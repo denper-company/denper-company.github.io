@@ -1,5 +1,5 @@
 import classNames from "common/class-names";
-import { ReactComponent as UnfoldMore } from "@material-design-icons/svg/round/unfold_more.svg";
+import { ChevronUpDownIcon } from "@heroicons/react/24/outline";
 
 export default function Select({ className, children, icon, ...props }) {
   return (
@@ -17,7 +17,7 @@ export default function Select({ className, children, icon, ...props }) {
         {children}
       </select>
       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-        <UnfoldMore className="h-5 fill-current" aria-hidden="true" />
+        <ChevronUpDownIcon className="h-5" />
       </div>
     </div>
   );

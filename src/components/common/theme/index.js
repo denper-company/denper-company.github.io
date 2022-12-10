@@ -1,6 +1,6 @@
 import fbt from "fbt";
 import { useCallback, useEffect, useState } from "react";
-import { ReactComponent as Palette } from "@material-design-icons/svg/round/palette.svg";
+import { SwatchIcon } from "@heroicons/react/24/outline";
 import Select from "components/common/select";
 import themeOptions from "enums/Theme$FbtEnum";
 
@@ -24,7 +24,7 @@ export default function SwitchTheme() {
     <Select
       value={theme}
       onChange={handleChange}
-      icon={<Palette className="h-5 fill-current" aria-hidden="true" />}
+      icon={<SwatchIcon className="h-5" />}
       className="capitalize"
       aria-label={fbt("Theme", "label")}
       title={fbt("Theme", "label")}
