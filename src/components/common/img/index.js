@@ -2,11 +2,9 @@ import { Fragment, useCallback, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
 export default function Img(props) {
-  const imgRef = useRef();
+  const imgRef = useRef(null);
   const [isOpen, setIsOpen] = useState(() => false);
-  const handleOpen = useCallback((event) => {
-    event.preventDefault();
-    event.stopPropagation();
+  const handleOpen = useCallback(() => {
     setIsOpen(true);
   }, []);
   const handleClose = useCallback(() => setIsOpen(() => false), []);
@@ -21,64 +19,62 @@ export default function Img(props) {
         <source srcSet={`${props.src}.webp`} type="image/webp" />
         <img {...props} src={`${props.src}.jpeg`} alt={props.alt} />
       </picture>
-      <Transition.Root show={isOpen} as={Fragment}>
+      <Transition show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          static
-          className="fixed inset-0 z-10 overflow-y-auto"
+          className="relative z-10"
           initialFocus={imgRef}
           open={isOpen}
           onClose={handleClose}
         >
-          <div className="flex min-h-screen items-center justify-center text-center">
-            <Transition.Child
-              as={Fragment}
-              enter="ease-out duration-300"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="ease-in duration-200"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <Dialog.Overlay className="fixed inset-0" />
-            </Transition.Child>
-            <span
-              className="inline-block h-screen align-middle"
-              aria-hidden="true"
-            >
-              &#8203;
-            </span>
-            <Transition.Child
-              as={Fragment}
-              enter="ease-out duration-300"
-              enterFrom="opacity-0 scale-95"
-              enterTo="opacity-100 scale-100"
-              leave="ease-in duration-200"
-              leaveFrom="opacity-100 scale-100"
-              leaveTo="opacity-0 scale-95"
-            >
-              <div className="inline-block transform overflow-hidden align-middle transition-all">
-                <picture>
-                  <source srcSet={`${props.src}.avif`} type="image/avif" />
-                  <source srcSet={`${props.src}.webp`} type="image/webp" />
-                  <img
-                    className="max-w-screen mx-auto aspect-auto max-h-screen animate-pulse cursor-zoom-out overflow-hidden bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
-                    src={`${props.src}.jpeg`}
-                    alt={props.alt}
-                    width={props.width}
-                    height={props.height}
-                    sizes="100vw"
-                    loading="lazy"
-                    ref={imgRef}
-                    onClick={handleClose}
-                    onLoad={handleLoad}
-                  />
-                </picture>
-              </div>
-            </Transition.Child>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/25 transition-opacity" />
+          </Transition.Child>
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="overflow-hidden align-middle shadow-xl transition-all">
+                  <Dialog.Title as="h2" className="sr-only">
+                    {props.alt}
+                  </Dialog.Title>
+                  <picture>
+                    <source srcSet={`${props.src}.avif`} type="image/avif" />
+                    <source srcSet={`${props.src}.webp`} type="image/webp" />
+                    <img
+                      className="mx-auto aspect-auto h-screen max-h-screen animate-pulse cursor-zoom-out overflow-hidden bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
+                      src={`${props.src}.jpeg`}
+                      alt={props.alt}
+                      width={props.width}
+                      height={props.height}
+                      sizes="100vw"
+                      loading="lazy"
+                      ref={imgRef}
+                      onClick={handleClose}
+                      onLoad={handleLoad}
+                    />
+                  </picture>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
           </div>
         </Dialog>
-      </Transition.Root>
+      </Transition>
     </>
   );
 }
