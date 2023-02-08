@@ -1,5 +1,6 @@
 const crypto = require("crypto");
 const { join } = require("path");
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
   babel: {
@@ -19,6 +20,18 @@ module.exports = {
     ],
   },
   webpack: {
+    plugins: {
+      add: [
+        new CompressionPlugin({
+          algorithm: "gzip",
+          minRatio: Infinity,
+        }),
+        new CompressionPlugin({
+          algorithm: "brotliCompress",
+          minRatio: Infinity,
+        }),
+      ],
+    },
     configure: (config, { env }) => {
       if (env === "production") {
         config.optimization.splitChunks = {
