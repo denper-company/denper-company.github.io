@@ -52,7 +52,7 @@ export default function Section() {
             sizes="50vw"
             alt="VDC"
             loading="lazy"
-            onLoad={(event) => event.target.classList.add("animate-none")}
+            onLoad={(event) => event.target.classList.add("!animate-none")}
           />
           <figcaption className="grid gap-1 font-medium">
             <span>
@@ -72,7 +72,7 @@ export default function Section() {
             sizes="50vw"
             alt="VPC"
             loading="lazy"
-            onLoad={(event) => event.target.classList.add("animate-none")}
+            onLoad={(event) => event.target.classList.add("!animate-none")}
           />
           <figcaption className="grid gap-1 font-medium">
             <span>

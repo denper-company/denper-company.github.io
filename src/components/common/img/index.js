@@ -9,7 +9,7 @@ export default function Img(props) {
   }, []);
   const handleClose = useCallback(() => setIsOpen(() => false), []);
   const handleLoad = useCallback(
-    (event) => event.target.classList.add("w-auto", "h-auto", "animate-none"),
+    (event) => event.target.classList.add("w-auto", "h-auto", "!animate-none"),
     []
   );
   return (
