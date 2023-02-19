@@ -5,7 +5,7 @@
   "homepage": "https://denper.company",
   "dependencies": {
     "@headlessui/react": "1.7.11",
-    "@heroicons/react": "2.0.15",
+    "@heroicons/react": "2.0.16",
     "fbt": "1.0.0",
     "react": "18.2.0",
     "react-app-polyfill": "3.0.0",
