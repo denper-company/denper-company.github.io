@@ -10,8 +10,8 @@
     "react": "18.2.0",
     "react-app-polyfill": "3.0.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "6.8.2",
-    "web-vitals": "3.1.1",
+    "react-router-dom": "6.9.0",
+    "web-vitals": "3.3.0",
     "workbox-background-sync": "6.5.4",
     "workbox-broadcast-update": "6.5.4",
     "workbox-cacheable-response": "6.5.4",
@@ -28,7 +28,7 @@
     "workbox-window": "6.5.4"
   },
   "devDependencies": {
-    "@craco/craco": "7.0.0",
+    "@craco/craco": "7.1.0",
     "@fbtjs/default-collection-transform": "1.0.0",
     "@headlessui/tailwindcss": "0.1.2",
     "@tailwindcss/container-queries": "0.1.0",
@@ -38,7 +38,7 @@
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",
     "@testing-library/user-event": "14.4.3",
-    "autoprefixer": "10.4.13",
+    "autoprefixer": "10.4.14",
     "babel-plugin-fbt": "1.0.0",
     "babel-plugin-fbt-runtime": "1.0.0",
     "compression-webpack-plugin": "10.0.0",
