@@ -1,19 +1,21 @@
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
   Navigate,
 } from "react-router-dom";
-import ErrorUI from "components/common/error/ui";
 import Loader from "components/common/loader";
-
-const Root = lazy(() => import("components/root"));
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
-    errorElement: <ErrorUI />,
+    lazy: () => import("components/app"),
+    children: [
+      {
+        index: true,
+        lazy: () => import("components/home"),
+      },
+    ],
   },
   {
     path: "*",

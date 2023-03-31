@@ -21,10 +21,8 @@ export default function Img(props) {
       </picture>
       <Transition show={isOpen} as={Fragment}>
         <Dialog
-          as="div"
           className="relative z-10"
           initialFocus={imgRef}
-          open={isOpen}
           onClose={handleClose}
         >
           <Transition.Child
