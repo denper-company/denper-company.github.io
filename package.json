@@ -31,7 +31,7 @@
     "@craco/craco": "7.1.0",
     "@fbtjs/default-collection-transform": "1.0.0",
     "@headlessui/tailwindcss": "0.1.2",
-    "@tailwindcss/container-queries": "0.1.0",
+    "@tailwindcss/container-queries": "0.1.1",
     "@tailwindcss/forms": "0.5.3",
     "@tailwindcss/typography": "0.5.9",
     "@testing-library/jest-dom": "5.16.5",
