@@ -60,9 +60,9 @@ export default function Section() {
             <span>
               <fbt desc="name">Denesh</fbt>
             </span>
-            <Link href="tel:+918667838933" className="underline">
+            <span>
               <fbt desc="caption">Founder</fbt>
-            </Link>
+            </span>
           </figcaption>
         </figure>
         <figure className="grid gap-2">
@@ -82,14 +82,9 @@ export default function Section() {
             <span>
               <fbt desc="name">Perakash</fbt>
             </span>
-            <Link
-              href="https://vpcvdc.github.io/"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="underline"
-            >
-              <fbt desc="caption">Chakravarthy</fbt>
-            </Link>
+            <span>
+              <fbt desc="caption">Co-founder</fbt>
+            </span>
           </figcaption>
         </figure>
       </div>

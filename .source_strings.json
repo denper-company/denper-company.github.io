@@ -336,21 +336,21 @@
   },
   {
    "hashToLeaf": {
-    "I0PcQMbM1dD9VYRclQYoqw==": {
-     "text": "Chakravarthy",
+    "uCxN8xOrBq6Mdzrswy3uxQ==": {
+     "text": "Co-founder",
      "desc": "caption"
     }
    },
    "filepath": "src/components/section/index.js",
-   "line_beg": 91,
+   "line_beg": 86,
    "col_beg": 14,
-   "line_end": 91,
-   "col_end": 52,
+   "line_end": 86,
+   "col_end": 50,
    "project": "",
    "jsfbt": {
     "t": {
      "desc": "caption",
-     "text": "Chakravarthy"
+     "text": "Co-founder"
     },
     "m": []
    }
