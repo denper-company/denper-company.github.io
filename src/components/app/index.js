@@ -34,16 +34,7 @@ export function ErrorBoundary() {
         ) : (
           <>
             Something went wrong on our side, we already received the error and
-            our team is working on it. If it's urgent, contact our support at
-            <a
-              href="https://vpcvdc.github.io/"
-              target="_blank"
-              rel="noreferrer noopener"
-              title="vpcvdc"
-            >
-              vpcvdc.github.io
-            </a>
-            .
+            our team is working on it.
           </>
         )}
       </p>
