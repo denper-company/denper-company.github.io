@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f6b5c8d.css",
-    "main.js": "/static/js/main.c1cdcaed.js",
+    "main.css": "/static/css/main.b4d6154d.css",
+    "main.js": "/static/js/main.9a9a0bbf.js",
     "static/js/957.8c6fd9fb.chunk.js": "/static/js/957.8c6fd9fb.chunk.js",
     "static/js/892.3be89876.chunk.js": "/static/js/892.3be89876.chunk.js",
     "static/js/1.945892df.chunk.js": "/static/js/1.945892df.chunk.js",
@@ -9,21 +9,21 @@
     "static/js/446.98b34284.chunk.js": "/static/js/446.98b34284.chunk.js",
     "static/js/214.df411670.chunk.js": "/static/js/214.df411670.chunk.js",
     "static/js/388.93e273b6.chunk.js": "/static/js/388.93e273b6.chunk.js",
-    "framework.js": "/static/js/framework.fd43c2e1.js",
-    "lib-ceabcd47.js": "/static/js/lib-ceabcd47.6e1a79fd.js",
-    "f6e22687.js": "/static/js/c8f7fe3b0e41be846d5687592cf2018ff6e22687.1936d6ed.chunk.js",
-    "static/js/132.dda0c448.chunk.js": "/static/js/132.dda0c448.chunk.js",
-    "static/js/556.eca90d51.js": "/static/js/556.eca90d51.js",
+    "framework.js": "/static/js/framework.def97607.js",
+    "lib-ceabcd47.js": "/static/js/lib-ceabcd47.025e7811.js",
+    "f6e22687.js": "/static/js/c8f7fe3b0e41be846d5687592cf2018ff6e22687.99c63244.chunk.js",
+    "static/js/132.ee0bbc75.chunk.js": "/static/js/132.ee0bbc75.chunk.js",
+    "static/js/556.c87480b6.js": "/static/js/556.c87480b6.js",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.6d32ec265576a81a0a641f7c8922fe22.svg",
     "static/media/avatar.svg": "/static/media/avatar.8d267dee61c4b07a9ac0.svg"
   },
   "entrypoints": [
-    "static/js/framework.fd43c2e1.js",
-    "static/js/lib-ceabcd47.6e1a79fd.js",
-    "static/js/556.eca90d51.js",
-    "static/css/main.4f6b5c8d.css",
-    "static/js/main.c1cdcaed.js"
+    "static/js/framework.def97607.js",
+    "static/js/lib-ceabcd47.025e7811.js",
+    "static/js/556.c87480b6.js",
+    "static/css/main.b4d6154d.css",
+    "static/js/main.9a9a0bbf.js"
   ]
 }
