@@ -9,7 +9,6 @@
 
 import { clientsClaim } from "workbox-core";
 import { precacheAndRoute } from "workbox-precaching";
-import { enable } from "workbox-navigation-preload";
 import { pageCache, imageCache, staticResourceCache } from "workbox-recipes";
 import { initialize } from "workbox-google-analytics";
 
@@ -30,7 +29,6 @@ self.addEventListener("message", (event) => {
 });
 
 // Any other custom service worker logic can go here.
-enable();
 pageCache();
 staticResourceCache();
 imageCache();
