@@ -11,7 +11,7 @@
     "react-app-polyfill": "3.0.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.11.2",
-    "web-vitals": "3.3.1",
+    "web-vitals": "3.3.2",
     "workbox-background-sync": "6.6.0",
     "workbox-broadcast-update": "6.6.0",
     "workbox-cacheable-response": "6.6.0",
@@ -64,7 +64,8 @@
     "postbuild": "sed -i '' 's/defer=\"defer\"/defer/ig;s/rel=\"stylesheet\"/rel=\"stylesheet\" media=\"print\"/ig' build/index.html",
     "serve": "serve -s build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -84,11 +85,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx lint-staged"
-    }
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
