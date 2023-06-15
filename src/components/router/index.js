@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -36,9 +35,5 @@ if (import.meta.hot) {
 }
 
 export default function Router() {
-  return (
-    <Suspense fallback={<Loader />}>
-      <RouterProvider router={router} fallbackElement={<Loader />} />
-    </Suspense>
-  );
+  return <RouterProvider router={router} fallbackElement={<Loader />} />;
 }
