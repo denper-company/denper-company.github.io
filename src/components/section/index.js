@@ -60,9 +60,13 @@ export default function Section() {
             <span>
               <fbt desc="name">Denesh</fbt>
             </span>
-            <span>
+            <Link
+              href="tel:+918667838933"
+              title="+91 86678 38933"
+              className="underline"
+            >
               <fbt desc="caption">Founder</fbt>
-            </span>
+            </Link>
           </figcaption>
         </figure>
         <figure className="grid gap-2">
@@ -82,9 +86,13 @@ export default function Section() {
             <span>
               <fbt desc="name">Perakash</fbt>
             </span>
-            <span>
+            <Link
+              href="tel:+919443402687"
+              title="+91 94434 02687"
+              className="underline"
+            >
               <fbt desc="caption">Co-founder</fbt>
-            </span>
+            </Link>
           </figcaption>
         </figure>
       </div>
