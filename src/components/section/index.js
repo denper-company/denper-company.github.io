@@ -8,7 +8,7 @@ export default function Section() {
     title: fbt("DENPER Company", "title"),
     description: fbt(
       "We are a small team of software engineers spread out all across the world, building apps that help and make people better.",
-      "description"
+      "description",
     ),
   });
   return (

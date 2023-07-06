@@ -10,7 +10,7 @@ export default function Select({ className, children, icon, ...props }) {
       <select
         className={classNames(
           className,
-          "block w-min rounded border-gray2 bg-gray0 bg-none px-10 py-3 focus:border-blue5 focus:outline-none focus:ring-blue5"
+          "block w-min rounded border-gray2 bg-gray0 bg-none px-10 py-3 focus:border-blue5 focus:outline-none focus:ring-blue5",
         )}
         {...props}
       >

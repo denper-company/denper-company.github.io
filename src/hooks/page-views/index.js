@@ -30,7 +30,7 @@ export default function usePageViews() {
   }, []);
   useEffect(() => {
     const localeNode = document.head.querySelector(
-      'meta[property="og:locale"]'
+      'meta[property="og:locale"]',
     );
     localeNode.content = locale;
     const localeAlternates = Object.keys(LOCALES).reduce((accumulator, key) => {
@@ -58,7 +58,7 @@ export default function usePageViews() {
       ? `${url}?lang=${lang}`
       : url;
     const localeNode = document.head.querySelector(
-      'link[rel="alternate"][hreflang="x-default"]'
+      'link[rel="alternate"][hreflang="x-default"]',
     );
     localeNode.href = url;
     const localeAlternates = Object.values(LOCALES).reduce(
@@ -70,7 +70,7 @@ export default function usePageViews() {
         accumulator.push(link);
         return accumulator;
       },
-      []
+      [],
     );
     localeNode.before?.(...localeAlternates);
     return () => {

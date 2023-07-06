@@ -16,7 +16,8 @@ export default function useLocale() {
   useEffect(() => {
     const found = Object.values(LOCALES).find(
       (locale) =>
-        locale.bcp47.toLowerCase() === window.navigator?.language?.toLowerCase()
+        locale.bcp47.toLowerCase() ===
+        window.navigator?.language?.toLowerCase(),
     );
     if (found) {
       setSearchParams({

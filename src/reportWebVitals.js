@@ -19,7 +19,7 @@ const reportWebVitals = (onPerfEntry) => {
         onINP(onPerfEntry);
         onLCP(onPerfEntry);
         onTTFB(onPerfEntry);
-      }
+      },
     );
   }
 };

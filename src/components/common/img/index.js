@@ -10,7 +10,7 @@ export default function Img(props) {
   const handleClose = useCallback(() => setIsOpen(() => false), []);
   const handleLoad = useCallback(
     (event) => event.currentTarget.classList.replace("animate-pulse", "w-auto"),
-    []
+    [],
   );
   return (
     <>

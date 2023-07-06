@@ -6,7 +6,7 @@ import themeOptions from "enums/Theme$FbtEnum";
 
 export default function SwitchTheme() {
   const [theme, setTheme] = useState(
-    () => window.sessionStorage?.getItem?.("theme") ?? "system"
+    () => window.sessionStorage?.getItem?.("theme") ?? "system",
   );
   useEffect(() => {
     const {

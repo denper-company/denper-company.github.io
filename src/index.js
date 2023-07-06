@@ -7,13 +7,13 @@ import { isProduction } from "environment";
 import reportWebVitals, { gtag } from "reportWebVitals";
 
 Array.from(document.head.querySelectorAll('[media="print"]')).forEach(
-  (query) => (query.media = "all")
+  (query) => (query.media = "all"),
 );
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Router />
-  </StrictMode>
+  </StrictMode>,
 );
 
 setTimeout(async () => {

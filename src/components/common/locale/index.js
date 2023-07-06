@@ -23,7 +23,7 @@ export default function SwitchLocale() {
         });
       }
     },
-    [searchParams, setSearchParams]
+    [searchParams, setSearchParams],
   );
   return (
     <Select
