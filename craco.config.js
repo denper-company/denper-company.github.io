@@ -22,14 +22,20 @@ module.exports = {
   webpack: {
     plugins: {
       add: [
-        new CompressionPlugin({
-          algorithm: "gzip",
-          minRatio: Infinity,
-        }),
-        new CompressionPlugin({
-          algorithm: "brotliCompress",
-          minRatio: Infinity,
-        }),
+        [
+          new CompressionPlugin({
+            algorithm: "gzip",
+            minRatio: Infinity,
+          }),
+          "append",
+        ],
+        [
+          new CompressionPlugin({
+            algorithm: "brotliCompress",
+            minRatio: Infinity,
+          }),
+          "append",
+        ],
       ],
     },
     configure: (config, { env }) => {
