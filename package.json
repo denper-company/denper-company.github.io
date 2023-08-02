@@ -28,6 +28,7 @@
     "workbox-window": "7.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@craco/craco": "7.1.0",
     "@fbtjs/default-collection-transform": "1.0.0",
     "@headlessui/tailwindcss": "0.2.0",
