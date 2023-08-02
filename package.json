@@ -42,8 +42,6 @@
     "compression-webpack-plugin": "10.0.0",
     "eslint-config-prettier": "8.9.0",
     "gh-pages": "5.0.0",
-    "husky": "8.0.3",
-    "lint-staged": "13.2.3",
     "prettier": "3.0.0",
     "prettier-plugin-tailwindcss": "0.4.1",
     "react-scripts": "5.0.1",
@@ -51,19 +49,22 @@
     "tailwindcss": "3.3.3"
   },
   "scripts": {
+    "prettier": "prettier . --write --ignore-path .gitignore --ignore-unknown",
+    "postprettier": "npm run lint",
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "postlint": "npm run fbt",
     "prefbt": "fbt-manifest --src src",
     "fbt": "fbt-collect --fbt-common-path common_strings.json --pretty --manifest < .src_manifest.json > .source_strings.json",
     "postfbt": "fbt-translate --translations translations/*.json --jenkins --output-dir src/locales",
     "predeploy": "npm run build",
     "deploy": "gh-pages -t -d build",
     "start": "craco start",
-    "prebuild": "npm run fbt",
+    "prebuild": "npm run prettier",
     "build": "craco build",
     "postbuild": "sed -i '' 's/defer=\"defer\"/defer/ig;s/rel=\"stylesheet\"/rel=\"stylesheet\" media=\"print\"/ig' build/index.html",
     "serve": "serve -s build",
     "test": "craco test",
-    "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -83,10 +84,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown",
-    "*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "overrides": {
     "fbt": {

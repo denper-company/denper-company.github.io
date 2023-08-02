@@ -1,7 +1,0 @@
-build
-package-lock.json
-.enum_manifest.json
-.source_strings.json
-.src_manifest.json
-src/enums
-src/locales
