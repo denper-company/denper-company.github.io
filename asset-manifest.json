@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5822e6e1.css",
-    "main.js": "/static/js/main.57efaeed.js",
+    "main.js": "/static/js/main.107f5ef1.js",
     "static/js/957.7fee2ce1.chunk.js": "/static/js/957.7fee2ce1.chunk.js",
     "static/js/892.3be89876.chunk.js": "/static/js/892.3be89876.chunk.js",
     "static/js/1.67eec3c2.chunk.js": "/static/js/1.67eec3c2.chunk.js",
@@ -12,7 +12,7 @@
     "framework.js": "/static/js/framework.def97607.js",
     "lib-ceabcd47.js": "/static/js/lib-ceabcd47.f7ac18b0.js",
     "f6e22687.js": "/static/js/c8f7fe3b0e41be846d5687592cf2018ff6e22687.99c63244.chunk.js",
-    "static/js/927.0786a3e9.chunk.js": "/static/js/927.0786a3e9.chunk.js",
+    "static/js/927.ed3cae1d.chunk.js": "/static/js/927.ed3cae1d.chunk.js",
     "static/js/189.dfc205af.js": "/static/js/189.dfc205af.js",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
@@ -24,6 +24,6 @@
     "static/js/lib-ceabcd47.f7ac18b0.js",
     "static/js/189.dfc205af.js",
     "static/css/main.5822e6e1.css",
-    "static/js/main.57efaeed.js"
+    "static/js/main.107f5ef1.js"
   ]
 }
