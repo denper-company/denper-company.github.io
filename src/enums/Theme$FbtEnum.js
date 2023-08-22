@@ -1,1 +1,1 @@
-module.exports = ["system", "light", "dark", "cool", "warm"];
+module.exports = ["system", "light", "dark"];

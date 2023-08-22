@@ -202,28 +202,6 @@
     --rose8-color: 159 18 57;
     --rose9-color: 136 19 55;
     --rose10-color: 76 5 25;
-    --gray0-cool: 248 250 252;
-    --gray1-cool: 241 245 249;
-    --gray2-cool: 226 232 240;
-    --gray3-cool: 203 213 225;
-    --gray4-cool: 148 163 184;
-    --gray5-cool: 100 116 139;
-    --gray6-cool: 71 85 105;
-    --gray7-cool: 51 65 85;
-    --gray8-cool: 30 41 59;
-    --gray9-cool: 15 23 42;
-    --gray10-cool: 2 6 23;
-    --gray0-warm: 250 250 249;
-    --gray1-warm: 245 245 244;
-    --gray2-warm: 231 229 228;
-    --gray3-warm: 214 211 209;
-    --gray4-warm: 168 162 158;
-    --gray5-warm: 120 113 108;
-    --gray6-warm: 87 83 78;
-    --gray7-warm: 68 64 60;
-    --gray8-warm: 41 37 36;
-    --gray9-warm: 28 25 23;
-    --gray10-warm: 12 10 9;
   }
   :root {
     color-scheme: dark light;
@@ -830,9 +808,7 @@
     --rose9: var(--rose9-color);
     --rose10: var(--rose10-color);
   }
-  [data-color-scheme="dark"],
-  [data-color-scheme="cool"],
-  [data-color-scheme="warm"] {
+  [data-color-scheme="dark"] {
     color-scheme: dark;
     --gray0: var(--gray10-color);
     --gray1: var(--gray9-color);
@@ -1033,40 +1009,12 @@
     --rose9: var(--rose1-color);
     --rose10: var(--rose0-color);
   }
-  [data-color-scheme="cool"] {
-    --gray0: var(--gray10-cool);
-    --gray1: var(--gray9-cool);
-    --gray2: var(--gray8-cool);
-    --gray3: var(--gray7-cool);
-    --gray4: var(--gray6-cool);
-    --gray5: var(--gray5-cool);
-    --gray6: var(--gray4-cool);
-    --gray7: var(--gray3-cool);
-    --gray8: var(--gray2-cool);
-    --gray9: var(--gray1-cool);
-    --gray10: var(--gray0-cool);
-  }
-  [data-color-scheme="warm"] {
-    --gray0: var(--gray10-warm);
-    --gray1: var(--gray9-warm);
-    --gray2: var(--gray8-warm);
-    --gray3: var(--gray7-warm);
-    --gray4: var(--gray6-warm);
-    --gray5: var(--gray5-warm);
-    --gray6: var(--gray4-warm);
-    --gray7: var(--gray3-warm);
-    --gray8: var(--gray2-warm);
-    --gray9: var(--gray1-warm);
-    --gray10: var(--gray0-warm);
-  }
   @media (prefers-color-scheme: dark) {
     [data-color-scheme="system"] .prose {
       @apply prose-invert;
     }
   }
-  [data-color-scheme="dark"] .prose,
-  [data-color-scheme="cool"] .prose,
-  [data-color-scheme="warm"] .prose {
+  [data-color-scheme="dark"] .prose {
     @apply prose-invert;
   }
 }

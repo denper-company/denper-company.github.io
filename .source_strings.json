@@ -50,9 +50,9 @@
     }
    },
    "filepath": "src/components/common/theme/index.js",
-   "line_beg": 29,
+   "line_beg": 31,
    "col_beg": 18,
-   "line_end": 29,
+   "line_end": 31,
    "col_end": 39,
    "project": "",
    "jsfbt": {
@@ -71,9 +71,9 @@
     }
    },
    "filepath": "src/components/common/theme/index.js",
-   "line_beg": 30,
+   "line_beg": 32,
    "col_beg": 13,
-   "line_end": 30,
+   "line_end": 32,
    "col_end": 34,
    "project": "",
    "jsfbt": {
@@ -97,20 +97,12 @@
     "ofpoNYNCfvqV0VEa3tfJnQ==": {
      "text": "dark",
      "desc": "theme"
-    },
-    "+UAmSqWRfScBSA9mOCDUaw==": {
-     "text": "cool",
-     "desc": "theme"
-    },
-    "sfI0f1ZnQVe1PeGSHI/I8w==": {
-     "text": "warm",
-     "desc": "theme"
     }
    },
    "filepath": "src/components/common/theme/index.js",
-   "line_beg": 34,
+   "line_beg": 36,
    "col_beg": 10,
-   "line_end": 36,
+   "line_end": 38,
    "col_end": 16,
    "project": "",
    "jsfbt": {
@@ -126,14 +118,6 @@
      "2": {
       "desc": "theme",
       "text": "dark"
-     },
-     "3": {
-      "desc": "theme",
-      "text": "cool"
-     },
-     "4": {
-      "desc": "theme",
-      "text": "warm"
      }
     },
     "m": [
