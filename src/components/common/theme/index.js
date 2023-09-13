@@ -3,10 +3,8 @@ import { useCallback, useEffect, useState } from "react";
 import { SwatchIcon } from "@heroicons/react/24/outline";
 import Select from "components/common/select";
 import themeOptions from "enums/Theme$FbtEnum";
-import { useLocaleContext } from "contexts/locale";
 
 export default function SwitchTheme() {
-  useLocaleContext();
   const [theme, setTheme] = useState(
     () => window.sessionStorage?.getItem?.("theme") ?? "system",
   );
