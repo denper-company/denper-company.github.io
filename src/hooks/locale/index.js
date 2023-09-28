@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { LOCALES } from "contexts/locale";
 import localeTranslation from "common/locale-translation";
-import { gtag } from "reportWebVitals";
 
 export default function useLocale() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -28,22 +27,20 @@ export default function useLocale() {
   }, []);
   useEffect(() => {
     async function init() {
-      const [locale, translations] = await localeTranslation(lang);
-      setState((state) => ({
-        ...state,
-        context: {
-          ...state.context,
-          locale,
-        },
-        translations,
-      }));
+      try {
+        const [locale, translations] = await localeTranslation(lang);
+        setState((state) => ({
+          ...state,
+          context: {
+            ...state.context,
+            locale,
+          },
+          translations,
+        }));
+      } catch (error) {}
     }
     if (lang) {
-      init().catch((error) => {
-        gtag("event", "exception", {
-          description: error?.message ?? error,
-        });
-      });
+      init();
     }
   }, [lang]);
   useEffect(() => {
