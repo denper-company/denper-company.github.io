@@ -66,6 +66,11 @@
     "test": "craco test",
     "eject": "react-scripts eject"
   },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
