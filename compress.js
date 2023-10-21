@@ -30,11 +30,11 @@ const doCompress = async (ipath, opath) => {
   for await (const dirent of dir) {
     if (dirent.isFile()) {
       await brotliCompress(
-        join(ipath, dirent.name),
+        join(opath, dirent.name),
         join(opath, `${dirent.name}.br`),
       );
       await gzipCompress(
-        join(ipath, dirent.name),
+        join(opath, dirent.name),
         join(opath, `${dirent.name}.gz`),
       );
     } else if (dirent.isDirectory()) {
