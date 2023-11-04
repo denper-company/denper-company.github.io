@@ -16,11 +16,14 @@ export default function SwitchLocale() {
     ({ target: { value } }) => {
       if (value === "en") {
         searchParams.delete("lang");
-        setSearchParams(searchParams);
+        setSearchParams(searchParams, { unstable_viewTransition: true });
       } else {
-        setSearchParams({
-          lang: value,
-        });
+        setSearchParams(
+          {
+            lang: value,
+          },
+          { unstable_viewTransition: true },
+        );
       }
     },
     [searchParams, setSearchParams],

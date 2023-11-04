@@ -25,6 +25,7 @@ const router = createBrowserRouter([
           search: window.location.search,
         }}
         replace
+        unstable_viewTransition
       />
     ),
   },
@@ -35,5 +36,11 @@ if (import.meta.hot) {
 }
 
 export default function Router() {
-  return <RouterProvider router={router} fallbackElement={<Loader />} />;
+  return (
+    <RouterProvider
+      router={router}
+      fallbackElement={<Loader />}
+      future={{ v7_startTransition: true }}
+    />
+  );
 }
