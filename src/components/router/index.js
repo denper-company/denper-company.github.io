@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -36,6 +37,23 @@ if (import.meta.hot) {
 }
 
 export default function Router() {
+  useEffect(() => {
+    if (document.startViewTransition) {
+      const handleClick = (event) => {
+        const x = event?.clientX ?? window.innerWidth / 2;
+        const y = event?.clientY ?? window.innerHeight / 2;
+        const r = Math.hypot(
+          Math.max(x, window.innerWidth - x),
+          Math.max(y, window.innerHeight - y),
+        );
+        document.documentElement.style.setProperty("--x", `${x}px`);
+        document.documentElement.style.setProperty("--y", `${y}px`);
+        document.documentElement.style.setProperty("--r", `${r}px`);
+      };
+      window.addEventListener("click", handleClick);
+      return () => window.removeEventListener("click", handleClick);
+    }
+  }, []);
   return (
     <RouterProvider
       router={router}
