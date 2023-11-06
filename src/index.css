@@ -1042,6 +1042,7 @@
   animation: none;
   mix-blend-mode: normal;
   display: block;
+  will-change: clip-path;
 }
 
 ::view-transition-new(root) {
