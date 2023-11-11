@@ -1,5 +1,5 @@
 import fbt from "fbt";
-import Link from "components/common/link";
+import Link from "components/link";
 import useSEO from "hooks/seo";
 
 export default function Section() {

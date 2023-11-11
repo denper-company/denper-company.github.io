@@ -7,10 +7,10 @@
      "desc": "label"
     }
    },
-   "filepath": "src/components/common/locale/index.js",
-   "line_beg": 36,
+   "filepath": "src/components/locale/index.js",
+   "line_beg": 33,
    "col_beg": 18,
-   "line_end": 36,
+   "line_end": 33,
    "col_end": 42,
    "project": "",
    "jsfbt": {
@@ -28,10 +28,10 @@
      "desc": "label"
     }
    },
-   "filepath": "src/components/common/locale/index.js",
-   "line_beg": 37,
+   "filepath": "src/components/locale/index.js",
+   "line_beg": 34,
    "col_beg": 13,
-   "line_end": 37,
+   "line_end": 34,
    "col_end": 37,
    "project": "",
    "jsfbt": {
@@ -40,89 +40,6 @@
      "text": "Language"
     },
     "m": []
-   }
-  },
-  {
-   "hashToLeaf": {
-    "N5vz6Hr0lJRqtfPAsiylmw==": {
-     "text": "Theme",
-     "desc": "label"
-    }
-   },
-   "filepath": "src/components/common/theme/index.js",
-   "line_beg": 29,
-   "col_beg": 18,
-   "line_end": 29,
-   "col_end": 39,
-   "project": "",
-   "jsfbt": {
-    "t": {
-     "desc": "label",
-     "text": "Theme"
-    },
-    "m": []
-   }
-  },
-  {
-   "hashToLeaf": {
-    "N5vz6Hr0lJRqtfPAsiylmw==": {
-     "text": "Theme",
-     "desc": "label"
-    }
-   },
-   "filepath": "src/components/common/theme/index.js",
-   "line_beg": 30,
-   "col_beg": 13,
-   "line_end": 30,
-   "col_end": 34,
-   "project": "",
-   "jsfbt": {
-    "t": {
-     "desc": "label",
-     "text": "Theme"
-    },
-    "m": []
-   }
-  },
-  {
-   "hashToLeaf": {
-    "9Rg/KdDoTjDth+K1z2+3DA==": {
-     "text": "system",
-     "desc": "theme"
-    },
-    "IVYu9iBLW5/ayi4irDWDvQ==": {
-     "text": "light",
-     "desc": "theme"
-    },
-    "ofpoNYNCfvqV0VEa3tfJnQ==": {
-     "text": "dark",
-     "desc": "theme"
-    }
-   },
-   "filepath": "src/components/common/theme/index.js",
-   "line_beg": 34,
-   "col_beg": 10,
-   "line_end": 36,
-   "col_end": 16,
-   "project": "",
-   "jsfbt": {
-    "t": {
-     "0": {
-      "desc": "theme",
-      "text": "system"
-     },
-     "1": {
-      "desc": "theme",
-      "text": "light"
-     },
-     "2": {
-      "desc": "theme",
-      "text": "dark"
-     }
-    },
-    "m": [
-     null
-    ]
    }
   },
   {
@@ -338,10 +255,90 @@
     },
     "m": []
    }
+  },
+  {
+   "hashToLeaf": {
+    "N5vz6Hr0lJRqtfPAsiylmw==": {
+     "text": "Theme",
+     "desc": "label"
+    }
+   },
+   "filepath": "src/components/theme/index.js",
+   "line_beg": 29,
+   "col_beg": 18,
+   "line_end": 29,
+   "col_end": 39,
+   "project": "",
+   "jsfbt": {
+    "t": {
+     "desc": "label",
+     "text": "Theme"
+    },
+    "m": []
+   }
+  },
+  {
+   "hashToLeaf": {
+    "N5vz6Hr0lJRqtfPAsiylmw==": {
+     "text": "Theme",
+     "desc": "label"
+    }
+   },
+   "filepath": "src/components/theme/index.js",
+   "line_beg": 30,
+   "col_beg": 13,
+   "line_end": 30,
+   "col_end": 34,
+   "project": "",
+   "jsfbt": {
+    "t": {
+     "desc": "label",
+     "text": "Theme"
+    },
+    "m": []
+   }
+  },
+  {
+   "hashToLeaf": {
+    "9Rg/KdDoTjDth+K1z2+3DA==": {
+     "text": "system",
+     "desc": "theme"
+    },
+    "IVYu9iBLW5/ayi4irDWDvQ==": {
+     "text": "light",
+     "desc": "theme"
+    },
+    "ofpoNYNCfvqV0VEa3tfJnQ==": {
+     "text": "dark",
+     "desc": "theme"
+    }
+   },
+   "filepath": "src/components/theme/index.js",
+   "line_beg": 34,
+   "col_beg": 10,
+   "line_end": 36,
+   "col_end": 16,
+   "project": "",
+   "jsfbt": {
+    "t": {
+     "0": {
+      "desc": "theme",
+      "text": "system"
+     },
+     "1": {
+      "desc": "theme",
+      "text": "light"
+     },
+     "2": {
+      "desc": "theme",
+      "text": "dark"
+     }
+    },
+    "m": [
+     null
+    ]
+   }
   }
  ],
- "childParentMappings": {
-  "4": 3,
-  "5": 3
- }
+ "childParentMappings": {}
 }

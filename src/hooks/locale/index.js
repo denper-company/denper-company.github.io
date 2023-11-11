@@ -19,15 +19,11 @@ export default function useLocale() {
         window.navigator?.language?.toLowerCase(),
     );
     if (found) {
-      setSearchParams(
-        {
-          lang: found?.bcp47,
-        },
-        { unstable_viewTransition: true },
-      );
+      setSearchParams({
+        lang: found?.bcp47,
+      });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [setSearchParams]);
   useEffect(() => {
     async function init() {
       try {

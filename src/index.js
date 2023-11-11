@@ -2,7 +2,7 @@ import "react-app-polyfill/stable";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "index.css";
-import Router from "components/router";
+import Router from "router";
 import { isProduction } from "environment";
 
 Array.from(document.head.querySelectorAll('[media="print"]')).forEach(

@@ -1018,33 +1018,3 @@
     @apply prose-invert;
   }
 }
-
-@layer utilities {
-  @keyframes circular-reveal {
-    from {
-      clip-path: circle(0 at var(--x, 50%) var(--y, 50%));
-    }
-    to {
-      clip-path: circle(var(--r, 100%) at var(--x, 50%) var(--y, 50%));
-    }
-  }
-  .animate-circular-reveal {
-    animation: circular-reveal 0.5s ease-in;
-  }
-}
-
-::view-transition-image-pair(root) {
-  isolation: auto;
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
-  display: block;
-  will-change: clip-path;
-}
-
-::view-transition-new(root) {
-  @apply animate-circular-reveal;
-}

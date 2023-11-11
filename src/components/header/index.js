@@ -1,5 +1,5 @@
-import SwitchTheme from "components/common/theme";
-import SwitchLocale from "components/common/locale";
+import SwitchTheme from "components/theme";
+import SwitchLocale from "components/locale";
 import { ReactComponent as Logo } from "logo.svg";
 
 export default function Header() {

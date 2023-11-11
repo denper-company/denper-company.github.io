@@ -1,7 +1,7 @@
 import fbt from "fbt";
 import { useCallback, useEffect, useState } from "react";
 import { SwatchIcon } from "@heroicons/react/24/outline";
-import Select from "components/common/select";
+import Select from "components/select";
 import themeOptions from "enums/Theme$FbtEnum";
 
 export default function SwitchTheme() {

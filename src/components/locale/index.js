@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import { LOCALES, useLocaleContext } from "contexts/locale";
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
-import Select from "components/common/select";
+import Select from "components/select";
 
 export default function SwitchLocale() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -16,14 +16,11 @@ export default function SwitchLocale() {
     ({ target: { value } }) => {
       if (value === "en") {
         searchParams.delete("lang");
-        setSearchParams(searchParams, { unstable_viewTransition: true });
+        setSearchParams(searchParams);
       } else {
-        setSearchParams(
-          {
-            lang: value,
-          },
-          { unstable_viewTransition: true },
-        );
+        setSearchParams({
+          lang: value,
+        });
       }
     },
     [searchParams, setSearchParams],
