@@ -204,7 +204,7 @@
     --rose10-color: 76 5 25;
   }
   :root {
-    color-scheme: dark light;
+    color-scheme: light dark;
     --gray0: var(--gray0-color);
     --gray1: var(--gray1-color);
     --gray2: var(--gray2-color);
