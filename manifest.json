@@ -2,8 +2,8 @@
   "short_name": "DENPER",
   "name": "DENPER Company",
   "description": "We are a small team of software engineers spread out all across the world, building apps that help and make people better.",
-  "dir": "auto",
   "lang": "en",
+  "dir": "ltr",
   "icons": [
     {
       "src": "icon.svg",
@@ -26,11 +26,18 @@
   ],
   "screenshots": [
     {
-      "src": "iphone.avif",
-      "sizes": "1410x2862",
-      "type": "image/avif",
-      "platform": "narrow",
-      "label": "iPhone screenshot"
+      "src": "splash.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "form_factor": "narrow",
+      "label": "narrow screenshot"
+    },
+    {
+      "src": "splash.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "form_factor": "wide",
+      "label": "wide screenshot"
     }
   ],
   "shortcuts": [
