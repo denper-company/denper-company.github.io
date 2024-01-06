@@ -10,10 +10,8 @@ export default function SwitchTheme() {
   );
   useEffect(() => {
     const {
-      document: {
-        documentElement: { dataset },
-      },
-    } = window;
+      documentElement: { dataset },
+    } = document;
     dataset.colorScheme = theme;
     window.sessionStorage?.setItem?.("theme", theme);
   }, [theme]);

@@ -22,6 +22,7 @@ export default function SwitchLocale() {
           lang: value,
         });
       }
+      window.sessionStorage?.setItem?.("lang", value);
     },
     [searchParams, setSearchParams],
   );

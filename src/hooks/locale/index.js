@@ -18,7 +18,7 @@ export default function useLocale() {
         locale.bcp47.toLowerCase() ===
         window.navigator?.language?.toLowerCase(),
     );
-    if (found) {
+    if (!window.sessionStorage?.getItem?.("lang") && found) {
       setSearchParams({
         lang: found?.bcp47,
       });

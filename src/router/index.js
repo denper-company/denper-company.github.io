@@ -7,12 +7,11 @@ import Loader from "components/loader";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    lazy: () => import("routes/app"),
+    lazy: () => import("routes/root"),
     children: [
       {
-        index: true,
-        lazy: () => import("routes/home"),
+        path: "/",
+        lazy: () => import("routes/app"),
       },
     ],
   },
