@@ -42,16 +42,16 @@
     "compression-webpack-plugin": "11.0.0",
     "eslint-config-prettier": "9.1.0",
     "gh-pages": "6.1.1",
-    "prettier": "3.2.2",
+    "prettier": "3.2.4",
     "prettier-plugin-tailwindcss": "0.5.11",
     "react-scripts": "5.0.1",
     "serve": "14.2.1",
     "tailwindcss": "3.4.1"
   },
   "scripts": {
-    "prettier": "prettier . --write --ignore-path .gitignore --ignore-unknown",
+    "prettier": "prettier . --write",
     "postprettier": "npm run lint",
-    "lint": "eslint . --fix --ignore-path .gitignore",
+    "lint": "eslint . --fix",
     "postlint": "npm run fbt",
     "prefbt": "fbt-manifest --src src",
     "fbt": "fbt-collect --fbt-common-path common_strings.json --pretty --manifest < .src_manifest.json > .source_strings.json",
@@ -79,6 +79,9 @@
       "prettier"
     ]
   },
+  "eslintIgnore": [
+    "build"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",

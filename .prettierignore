@@ -1,0 +1,3 @@
+# Ignore artifacts:
+jsconfig.json
+package-lock.json
