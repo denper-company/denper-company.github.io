@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.c1b0aec9.css",
-    "main.js": "/static/js/main.d5b415e3.js",
-    "static/js/957.7fee2ce1.chunk.js": "/static/js/957.7fee2ce1.chunk.js",
-    "static/js/857.fd2e8cff.chunk.js": "/static/js/857.fd2e8cff.chunk.js",
-    "static/js/122.c8a09e60.chunk.js": "/static/js/122.c8a09e60.chunk.js",
-    "static/js/446.5d85f769.chunk.js": "/static/js/446.5d85f769.chunk.js",
-    "static/js/537.89afa250.chunk.js": "/static/js/537.89afa250.chunk.js",
-    "static/js/844.9b5d66ed.chunk.js": "/static/js/844.9b5d66ed.chunk.js",
-    "framework.js": "/static/js/framework.def97607.js",
-    "lib-ceabcd47.js": "/static/js/lib-ceabcd47.0adde195.js",
-    "f6e22687.js": "/static/js/c8f7fe3b0e41be846d5687592cf2018ff6e22687.4e7031b2.chunk.js",
-    "static/js/887.c68cc10f.js": "/static/js/887.c68cc10f.js",
+    "main.css": "/static/css/main.63c6b8b0.css",
+    "main.js": "/static/js/main.daeb22d6.js",
+    "static/js/957.4cb18e61.chunk.js": "/static/js/957.4cb18e61.chunk.js",
+    "static/js/857.81570f9f.chunk.js": "/static/js/857.81570f9f.chunk.js",
+    "static/js/122.fe08efd6.chunk.js": "/static/js/122.fe08efd6.chunk.js",
+    "static/js/446.c0cf60a6.chunk.js": "/static/js/446.c0cf60a6.chunk.js",
+    "static/js/537.634f006c.chunk.js": "/static/js/537.634f006c.chunk.js",
+    "static/js/844.9fef19d1.chunk.js": "/static/js/844.9fef19d1.chunk.js",
+    "framework.js": "/static/js/framework.87b2384c.js",
+    "lib-ceabcd47.js": "/static/js/lib-ceabcd47.d7a2ad50.js",
+    "f6e22687.js": "/static/js/c8f7fe3b0e41be846d5687592cf2018ff6e22687.a66cfea6.chunk.js",
+    "static/js/829.39274b13.js": "/static/js/829.39274b13.js",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.25c9218e9b5402b046ec15d3a9d10e80.svg",
     "static/media/avatar.svg": "/static/media/avatar.ff84070cc6d15be6986c.svg"
   },
   "entrypoints": [
-    "static/js/framework.def97607.js",
-    "static/js/lib-ceabcd47.0adde195.js",
-    "static/js/887.c68cc10f.js",
-    "static/css/main.c1b0aec9.css",
-    "static/js/main.d5b415e3.js"
+    "static/js/framework.87b2384c.js",
+    "static/js/lib-ceabcd47.d7a2ad50.js",
+    "static/js/829.39274b13.js",
+    "static/css/main.63c6b8b0.css",
+    "static/js/main.daeb22d6.js"
   ]
 }

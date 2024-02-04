@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdenper=self.webpackChunkdenper||[]).push([[857],{5857:(e,n,r)=>{r.r(n),r.d(n,{Component:()=>a});var s=r(8467),t=r(32),p=r(8400),u=r(6417);function a(){return(0,u.jsxs)(p.ZP,{children:[(0,u.jsx)(s.j3,{}),(0,u.jsx)(t.GI,{getKey:e=>{let{pathname:n}=e;return n}})]})}}}]);
