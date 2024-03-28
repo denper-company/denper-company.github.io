@@ -9,7 +9,7 @@ const Section = lazy(() => import("components/section"));
 export function Component() {
   usePageViews();
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-dvh flex-col">
       <Header />
       <Section />
     </main>

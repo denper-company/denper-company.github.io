@@ -55,7 +55,7 @@ export default function Img(props) {
                     <source srcSet={`${props.src}.avif`} type="image/avif" />
                     <source srcSet={`${props.src}.webp`} type="image/webp" />
                     <img
-                      className="mx-auto aspect-auto h-screen max-h-screen animate-pulse cursor-zoom-out overflow-hidden bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
+                      className="mx-auto aspect-auto h-dvh max-h-dvh animate-pulse cursor-zoom-out overflow-hidden bg-gray1 bg-avatar bg-cover bg-center bg-no-repeat object-cover shadow-inner"
                       src={`${props.src}.jpeg`}
                       alt={props.alt}
                       width={props.width}
