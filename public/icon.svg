@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+  <title>DENPER Company logo</title>
+  <style>
+    svg {
+      stroke: black;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        stroke: white;
+      }
+    }
+  </style>
+  <path d="m5,1 v10 c-5,0 -5,-5 0,-5 h2 c5,0 5,-5 0,-5 v10" />
+</svg>

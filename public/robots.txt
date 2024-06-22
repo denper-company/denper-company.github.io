@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://denper.company/sitemap.txt
