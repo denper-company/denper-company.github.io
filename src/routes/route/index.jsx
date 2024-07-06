@@ -14,6 +14,7 @@ export function Component() {
             href="https://allyfile.com/"
             target="_blank"
             rel="noreferrer noopener"
+            className="underline-offset-8"
           >
             AllyFile
           </a>
@@ -22,6 +23,7 @@ export function Component() {
             href="https://allyweds.com/"
             target="_blank"
             rel="noreferrer noopener"
+            className="underline-offset-8"
           >
             AllyWeds
           </a>
@@ -30,6 +32,7 @@ export function Component() {
             href="https://allyspot.com/"
             target="_blank"
             rel="noreferrer noopener"
+            className="underline-offset-8"
           >
             AllySpot
           </a>
