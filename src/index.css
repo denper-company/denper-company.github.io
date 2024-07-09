@@ -7,6 +7,5 @@
     color-scheme: light dark;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
-    font-feature-settings: "case", "salt", "tnum", "zero";
   }
 }

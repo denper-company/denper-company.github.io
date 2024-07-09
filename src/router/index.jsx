@@ -7,10 +7,11 @@ import Loader from "/src/components/loader";
 
 const router = createBrowserRouter([
   {
+    path: "/",
     lazy: () => import("/src/routes"),
     children: [
       {
-        path: "/",
+        index: true,
         lazy: () => import("/src/routes/route"),
       },
     ],
