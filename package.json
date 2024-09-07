@@ -4,10 +4,12 @@
   "license": "UNLICENSED",
   "type": "module",
   "scripts": {
+    "clear": "rm -rf docs",
+    "compress": "gzip --best --keep --no-name --recursive docs",
     "dev": "vite",
-    "prebuild": "rm -rf docs",
+    "prebuild": "npm run clear",
     "build": "vite build",
-    "postbuild": "gzip --best --keep --no-name --recursive docs",
+    "postbuild": "npm run compress",
     "preview": "vite preview"
   },
   "dependencies": {
