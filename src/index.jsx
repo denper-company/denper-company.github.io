@@ -8,3 +8,22 @@ createRoot(document.getElementById("root")).render(
     <Router />
   </StrictMode>,
 );
+
+setTimeout(async () => {
+  try {
+    if (import.meta.env.PROD && "serviceWorker" in navigator) {
+      const { Workbox } = await import("workbox-window/Workbox.mjs");
+      const wb = new Workbox("/sw.js");
+      const skipWaiting = () => {
+        wb.addEventListener("controlling", () => window.location.reload());
+        wb.messageSkipWaiting();
+      };
+      wb.addEventListener("waiting", skipWaiting);
+      document.addEventListener(
+        "visibilitychange",
+        async () => !document.hidden && wb.update(),
+      );
+      await wb.register();
+    }
+  } catch (error) {}
+}, 0);

@@ -1,13 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
   <title>DENPER Company logo</title>
   <style>
     svg {
-      stroke: black;
+      background: black;
+      stroke: white;
     }
-    @media (prefers-color-scheme: dark) {
-      svg {
-        stroke: white;
-      }
+    svg path {
+      transform: translate(25%, 25%);
     }
   </style>
   <path d="m5,1 v10 c-5,0 -5,-5 0,-5 h2 c5,0 5,-5 0,-5 v10" />
