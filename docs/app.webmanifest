@@ -54,10 +54,10 @@
   ],
   "shortcuts": [
     {
-      "name": "Home page",
-      "url": "/",
+      "name": "Open Home",
       "short_name": "Home",
-      "description": "We are a small team of software engineers spread out all across the world, building apps that help and make people better.",
+      "description": "Open the home page",
+      "url": "/",
       "icons": [
         {
           "src": "/icon.svg",
