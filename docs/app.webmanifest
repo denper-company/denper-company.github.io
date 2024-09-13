@@ -16,25 +16,20 @@
     {
       "src": "/icon.svg",
       "type": "image/svg+xml",
-      "sizes": "any"
-    },
-    {
-      "src": "/icon.avif",
-      "type": "image/avif",
       "sizes": "1024x1024"
     }
   ],
   "screenshots": [
     {
-      "src": "/icon.avif",
-      "type": "image/avif",
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
       "sizes": "1024x1024",
       "form_factor": "narrow",
       "label": "DENPER Company"
     },
     {
-      "src": "/icon.avif",
-      "type": "image/avif",
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
       "sizes": "1024x1024",
       "form_factor": "wide",
       "label": "DENPER Company"
