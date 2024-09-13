@@ -12,6 +12,18 @@
   "background_color": "#000000",
   "categories": ["business"],
   "display": "standalone",
+  "display_override": ["window-controls-overlay"],
+  "launch_handler": {
+    "client_mode": ["focus-existing", "auto"]
+  },
+  "scope_extensions": [{ "origin": "https://*.denper.company" }],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://denper.company/app.webmanifest"
+    }
+  ],
+  "prefer_related_applications": true,
   "icons": [
     {
       "src": "/icon.svg",
@@ -38,6 +50,21 @@
       "sizes": "1024x1024",
       "form_factor": "wide",
       "label": "DENPER Company"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home page",
+      "url": "/",
+      "short_name": "Home",
+      "description": "We are a small team of software engineers spread out all across the world, building apps that help and make people better.",
+      "icons": [
+        {
+          "src": "/icon.svg",
+          "type": "image/svg+xml",
+          "sizes": "any"
+        }
+      ]
     }
   ]
 }
