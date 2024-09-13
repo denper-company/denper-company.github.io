@@ -17,6 +17,11 @@
       "src": "/icon.svg",
       "type": "image/svg+xml",
       "sizes": "any"
+    },
+    {
+      "src": "/icon.avif",
+      "type": "image/avif",
+      "sizes": "1024x1024"
     }
   ]
 }
