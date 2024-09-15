@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "company.denper.twa",
+      "sha256_cert_fingerprints": [
+        "69:2A:87:C3:68:CE:E0:A1:D4:A1:77:16:C5:AD:63:BE:D5:34:46:7C:7C:E2:F9:4E:2E:E8:8E:4E:30:CB:88:5A"
+      ]
+    }
+  }
+]
