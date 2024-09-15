@@ -8,15 +8,16 @@
   "short_name": "DENPER",
   "name": "DENPER Company",
   "description": "We are a small team of software engineers spread out all across the world, building apps that help and make people better.",
-  "theme_color": "black",
-  "background_color": "black",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "categories": ["business"],
   "display": "standalone",
   "icons": [
     {
       "src": "/icon.svg",
       "type": "image/svg+xml",
-      "sizes": "1024x1024"
+      "sizes": "1024x1024",
+      "purpose": "any"
     },
     {
       "src": "/maskable.svg",
