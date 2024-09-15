@@ -2,7 +2,7 @@ export function Component() {
   return (
     <article className="prose prose-sm prose-neutral sm:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl dark:prose-invert">
       <header>
-        <h1>Hello World</h1>
+        <h1>Hello, World!</h1>
       </header>
       <p>
         We are a small team of software engineers spread out all across the
