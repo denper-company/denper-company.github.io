@@ -8,63 +8,21 @@
   "short_name": "DENPER",
   "name": "DENPER Company",
   "description": "We are a small team of software engineers spread out all across the world, building apps that help and make people better.",
-  "theme_color": "#000000",
-  "background_color": "#000000",
+  "theme_color": "black",
+  "background_color": "black",
   "categories": ["business"],
   "display": "standalone",
-  "display_override": ["window-controls-overlay"],
-  "launch_handler": {
-    "client_mode": ["focus-existing", "auto"]
-  },
-  "scope_extensions": [{ "origin": "https://*.denper.company" }],
-  "related_applications": [
-    {
-      "platform": "webapp",
-      "url": "https://denper.company/app.webmanifest"
-    }
-  ],
-  "prefer_related_applications": true,
   "icons": [
     {
       "src": "/icon.svg",
       "type": "image/svg+xml",
-      "sizes": "any"
-    },
-    {
-      "src": "/icon.png",
-      "type": "image/png",
       "sizes": "1024x1024"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "/icon.png",
-      "type": "image/png",
-      "sizes": "1024x1024",
-      "form_factor": "narrow",
-      "label": "DENPER Company"
     },
     {
-      "src": "/icon.png",
-      "type": "image/png",
-      "sizes": "1024x1024",
-      "form_factor": "wide",
-      "label": "DENPER Company"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Open Home",
-      "short_name": "Home",
-      "description": "Open the home page",
-      "url": "/",
-      "icons": [
-        {
-          "src": "/icon.svg",
-          "type": "image/svg+xml",
-          "sizes": "any"
-        }
-      ]
+      "src": "/maskable.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "maskable"
     }
   ]
 }
