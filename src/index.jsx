@@ -19,11 +19,8 @@ setTimeout(async () => {
         wb.messageSkipWaiting();
       };
       wb.addEventListener("waiting", skipWaiting);
-      document.addEventListener(
-        "visibilitychange",
-        async () => !document.hidden && wb.update(),
-      );
       await wb.register();
+      await wb.update();
     }
   } catch (error) {}
 }, 0);
