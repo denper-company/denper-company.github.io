@@ -4,10 +4,8 @@
   "license": "UNLICENSED",
   "type": "module",
   "scripts": {
-    "clear": "rm -rf docs",
     "compress": "gzip --best --keep --no-name --recursive docs",
     "dev": "vite",
-    "prebuild": "npm run clear",
     "build": "vite build",
     "postbuild": "npm run workbox",
     "preview": "vite preview",
@@ -27,7 +25,7 @@
     "autoprefixer": "10.4.20",
     "postcss": "8.4.47",
     "prettier-plugin-tailwindcss": "0.6.6",
-    "tailwindcss": "3.4.12",
+    "tailwindcss": "3.4.13",
     "vite": "5.4.7",
     "workbox-cli": "7.1.0"
   },
