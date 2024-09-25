@@ -2,7 +2,6 @@
   <title>DENPER Company logo</title>
   <style>
     svg {
-      background: white;
       stroke: black;
     }
     svg path {
@@ -10,7 +9,6 @@
     }
     @media (prefers-color-scheme: dark) {
       svg {
-        background: black;
         stroke: white;
       }
     }
