@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Map</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/pmtiles/dist/pmtiles.js"></script>
+    <script src="https://unpkg.com/protomaps-themes-base/dist/protomaps-themes-base.js"></script>
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    <link
+      href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="grid h-dvh grid-cols-1 text-center xl:grid-cols-2">
+    <section class="flex flex-col">
+      <header>
+        Origin Endpoint
+        <span class="hidden xl:inline">
+          (https://denper.blr1.digitaloceanspaces.com/map.pmtiles)
+        </span>
+      </header>
+      <div id="map" class="flex-1"></div>
+    </section>
+    <section class="flex flex-col">
+      <header>
+        CDN Endpoint
+        <span class="hidden xl:inline">
+          (https://denper.blr1.cdn.digitaloceanspaces.com/map.pmtiles)
+        </span>
+      </header>
+      <div id="map-cdn" class="flex-1"></div>
+    </section>
+    <script>
+      const protocol = new pmtiles.Protocol();
+      maplibregl.addProtocol("pmtiles", protocol.tile);
+      const map = new maplibregl.Map({
+        container: "map",
+        style: {
+          version: 8,
+          glyphs:
+            "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+          sprite:
+            "https://protomaps.github.io/basemaps-assets/sprites/v3/light",
+          sources: {
+            protomaps: {
+              type: "vector",
+              url: "pmtiles://https://denper.blr1.digitaloceanspaces.com/map.pmtiles",
+              attribution:
+                '<a href="https://denper.company/" target="_blank" rel="noreferrer noopener">DENPER</a> © <a href="https://openstreetmap.org/" target="_blank" rel="noreferrer noopener">OpenStreetMap</a>',
+            },
+          },
+          layers: protomaps_themes_base.default("protomaps", "light"),
+        },
+        center: [0, 0],
+        zoom: 0,
+      });
+      const mapCDN = new maplibregl.Map({
+        container: "map-cdn",
+        style: {
+          version: 8,
+          glyphs:
+            "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+          sprite:
+            "https://protomaps.github.io/basemaps-assets/sprites/v3/light",
+          sources: {
+            protomaps: {
+              type: "vector",
+              url: "pmtiles://https://denper.blr1.cdn.digitaloceanspaces.com/map.pmtiles",
+              attribution:
+                '<a href="https://denper.company/" target="_blank" rel="noreferrer noopener">DENPER</a> © <a href="https://openstreetmap.org/" target="_blank" rel="noreferrer noopener">OpenStreetMap</a>',
+            },
+          },
+          layers: protomaps_themes_base.default("protomaps", "light"),
+        },
+        center: [0, 0],
+        zoom: 0,
+      });
+    </script>
+  </body>
+</html>
