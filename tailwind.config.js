@@ -10,7 +10,7 @@ export default {
         sans: [
           `InterVariable,${defaultTheme.fontFamily.sans}`,
           {
-            fontFeatureSettings: '"case","salt","tnum","zero"',
+            fontFeatureSettings: '"cpsp","salt","tnum","zero"',
           },
         ],
       },
