@@ -3,11 +3,9 @@ importScripts(
 );
 const {
   core: { clientsClaim },
-  precaching: { precache },
   recipes: { pageCache, staticResourceCache, imageCache },
 } = workbox;
 clientsClaim();
-precache(self.__WB_MANIFEST);
 self.addEventListener("message", (event) => {
   if (event?.data?.type === "SKIP_WAITING") {
     self.skipWaiting();
