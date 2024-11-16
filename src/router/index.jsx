@@ -5,22 +5,32 @@ import {
 } from "react-router-dom";
 import Loader from "/src/components/loader";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      lazy: () => import("/src/routes"),
+      children: [
+        {
+          index: true,
+          lazy: () => import("/src/routes/route"),
+        },
+      ],
+    },
+    {
+      path: "*",
+      element: <Navigate to="/" replace />,
+    },
+  ],
   {
-    path: "/",
-    lazy: () => import("/src/routes"),
-    children: [
-      {
-        index: true,
-        lazy: () => import("/src/routes/route"),
-      },
-    ],
+    future: {
+      v7_relativeSplatPath: true,
+      v7_fetcherPersist: true,
+      v7_normalizeFormMethod: true,
+      v7_skipActionErrorRevalidation: true,
+    },
   },
-  {
-    path: "*",
-    element: <Navigate to="/" replace />,
-  },
-]);
+);
 
 if (import.meta.hot) {
   import.meta.hot.dispose(() => router.dispose());
