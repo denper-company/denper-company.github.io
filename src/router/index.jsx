@@ -10,6 +10,7 @@ const router = createBrowserRouter(
     {
       path: "/",
       lazy: () => import("/src/routes"),
+      HydrateFallback: Loader,
       children: [
         {
           index: true,
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       v7_relativeSplatPath: true,
       v7_fetcherPersist: true,
       v7_normalizeFormMethod: true,
+      v7_partialHydration: true,
       v7_skipActionErrorRevalidation: true,
     },
   },
@@ -38,10 +40,6 @@ if (import.meta.hot) {
 
 export default function Router() {
   return (
-    <RouterProvider
-      router={router}
-      fallbackElement={<Loader />}
-      future={{ v7_startTransition: true }}
-    />
+    <RouterProvider router={router} future={{ v7_startTransition: true }} />
   );
 }
