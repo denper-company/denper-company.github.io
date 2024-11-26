@@ -4,7 +4,7 @@ import {
   Outlet,
   ScrollRestoration,
   useRouteError,
-} from "react-router-dom";
+} from "react-router";
 import Logo from "/src/components/logo";
 
 export function Component() {
