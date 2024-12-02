@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        lazy: () => import("/src/routes/route"),
+        lazy: () => import("/src/routes/home"),
       },
     ],
   },
