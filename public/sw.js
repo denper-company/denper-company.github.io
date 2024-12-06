@@ -5,7 +5,6 @@ const {
   core: { clientsClaim },
   recipes: { pageCache, staticResourceCache, imageCache },
 } = workbox;
-clientsClaim();
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", () =>
   self.clients
@@ -18,6 +17,7 @@ self.addEventListener("activate", () =>
       ),
     ),
 );
+clientsClaim();
 pageCache();
 staticResourceCache();
 imageCache();
