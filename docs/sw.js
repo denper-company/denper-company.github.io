@@ -2,7 +2,6 @@ importScripts(
   "https://storage.googleapis.com/workbox-cdn/releases/7.3.0/workbox-sw.js",
 );
 const {
-  core: { clientsClaim },
   recipes: { pageCache, staticResourceCache, imageCache },
 } = workbox;
 self.addEventListener("install", () => self.skipWaiting());
@@ -17,7 +16,6 @@ self.addEventListener("activate", () =>
       ),
     ),
 );
-clientsClaim();
 pageCache();
 staticResourceCache();
 imageCache();
