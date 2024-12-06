@@ -18,7 +18,7 @@ export function Component() {
           >
             AllyFile
           </a>
-          &nbsp;&middot;&nbsp;
+          &nbsp;·&nbsp;
           <a
             href="https://allyweds.com/"
             target="_blank"
@@ -27,7 +27,7 @@ export function Component() {
           >
             AllyWeds
           </a>
-          &nbsp;&middot;&nbsp;
+          &nbsp;·&nbsp;
           <a
             href="https://allyspot.com/"
             target="_blank"
