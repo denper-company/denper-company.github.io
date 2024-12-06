@@ -6,11 +6,18 @@ const {
   recipes: { pageCache, staticResourceCache, imageCache },
 } = workbox;
 clientsClaim();
-self.addEventListener("message", (event) => {
-  if (event?.data?.type === "SKIP_WAITING") {
-    self.skipWaiting();
-  }
-});
+self.addEventListener("install", () => self.skipWaiting());
+self.addEventListener("activate", () =>
+  self.clients
+    .matchAll({
+      type: "window",
+    })
+    .then((windowClients) =>
+      windowClients.forEach((windowClient) =>
+        windowClient.navigate(windowClient.url),
+      ),
+    ),
+);
 pageCache();
 staticResourceCache();
 imageCache();
