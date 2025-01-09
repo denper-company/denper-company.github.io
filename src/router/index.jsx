@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router";
-import Loader from "/src/components/loader";
+import { Loader } from "/src/components/loader";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +23,6 @@ if (import.meta.hot) {
   import.meta.hot.dispose(() => router.dispose());
 }
 
-export default function Router() {
+export function Router() {
   return <RouterProvider router={router} />;
 }

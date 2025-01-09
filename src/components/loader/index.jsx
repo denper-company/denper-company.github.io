@@ -1,6 +1,6 @@
-import Logo from "/src/components/logo";
+import { Logo } from "/src/components/logo";
 
-export default function Loader() {
+export function Loader() {
   return (
     <div className="absolute inset-0 flex animate-pulse items-center justify-center">
       <Logo className="pointer-events-none h-16" />
