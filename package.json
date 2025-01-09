@@ -17,8 +17,8 @@
     "workbox-window": "7.3.0"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "0.5.9",
-    "@tailwindcss/typography": "0.5.15",
+    "@tailwindcss/forms": "0.5.10",
+    "@tailwindcss/typography": "0.5.16",
     "@vitejs/plugin-react": "4.3.4",
     "autoprefixer": "10.4.20",
     "postcss": "8.4.49",

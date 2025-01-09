@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 import Router from "/src/router";
 import "/src/index.css";
 
+const sw = "serviceWorker" in navigator;
+
 document
   .querySelectorAll('link[media="print"]')
   .forEach((link) => (link.media = "all"));
@@ -11,11 +13,11 @@ setTimeout(async () => {
   try {
     createRoot(document.getElementById("root")).render(
       <StrictMode>
-        <link rel="manifest" href="/app.webmanifest" />
+        {sw && <link rel="manifest" href="/app.webmanifest" />}
         <Router />
       </StrictMode>,
     );
-    if (import.meta.env.PROD && "serviceWorker" in navigator) {
+    if (import.meta.env.PROD && sw) {
       const { Workbox } = await import("workbox-window/Workbox.mjs");
       const wb = new Workbox("/sw.js");
       await wb.register();
