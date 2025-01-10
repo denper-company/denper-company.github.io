@@ -4,7 +4,7 @@ importScripts(
 const {
   recipes: { pageCache, staticResourceCache, imageCache },
   routing: { registerRoute },
-  strategies: { CacheFirst },
+  strategies: { CacheFirst, StaleWhileRevalidate },
   cacheableResponse: { CacheableResponsePlugin },
   expiration: { ExpirationPlugin },
 } = workbox;
@@ -23,21 +23,28 @@ self.addEventListener("activate", () =>
 pageCache();
 staticResourceCache();
 imageCache();
-const cacheName = "fonts";
-const matchCallback = ({ request }) => request.destination === "font";
-const maxAgeSeconds = 30 * 24 * 60 * 60;
-const maxEntries = 60;
 registerRoute(
-  matchCallback,
+  ({ request }) => request.destination === "font",
   new CacheFirst({
-    cacheName,
+    cacheName: "fonts",
     plugins: [
       new CacheableResponsePlugin({
         statuses: [0, 200],
       }),
       new ExpirationPlugin({
-        maxEntries,
-        maxAgeSeconds,
+        maxEntries: 60,
+        maxAgeSeconds: 30 * 24 * 60 * 60,
+      }),
+    ],
+  }),
+);
+registerRoute(
+  ({ request }) => request.destination === "manifest",
+  new StaleWhileRevalidate({
+    cacheName: "manifests",
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
       }),
     ],
   }),
