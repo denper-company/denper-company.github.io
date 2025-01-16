@@ -1,5 +1,3 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
 import "/src/index.css";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -8,7 +6,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     document
       .querySelectorAll('link[media="print"]')
       .forEach((link) => (link.media = "all"));
-    const { Router } = await import("/src/router");
+    const [{ StrictMode }, { createRoot }, { Router }] = await Promise.all([
+      import("react"),
+      import("react-dom/client"),
+      import("/src/router"),
+    ]);
     createRoot(document.getElementById("root")).render(
       <StrictMode>
         {sw && <link rel="manifest" href="/app.webmanifest" />}
