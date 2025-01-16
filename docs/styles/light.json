@@ -1,14 +1,5 @@
 {
-  "version": 8,
-  "glyphs": "https://denper.company/fonts/{fontstack}/{range}.pbf",
   "sprite": "https://denper.company/sprites/v4/light",
-  "sources": {
-    "maps": {
-      "type": "vector",
-      "url": "pmtiles://https://denper.blr1.digitaloceanspaces.com/map.pmtiles",
-      "attribution": "<a href='https://denper.company/' target='_blank' rel='noreferrer noopener'>DENPER</a> © <a href='https://openstreetmap.org/' target='_blank' rel='noreferrer noopener'>OpenStreetMap</a>"
-    }
-  },
   "layers": [
     {
       "id": "background",
