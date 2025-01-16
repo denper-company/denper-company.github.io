@@ -17,15 +17,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         <Router />
       </StrictMode>,
     );
-    setTimeout(async () => {
-      try {
-        if (import.meta.env.PROD && sw) {
-          const { Workbox } = await import("workbox-window/Workbox.mjs");
-          const wb = new Workbox("/sw.js");
-          await wb.register();
-          await wb.update();
-        }
-      } catch (error) {}
-    });
+    if (import.meta.env.PROD && sw) {
+      const { Workbox } = await import("workbox-window/Workbox.mjs");
+      const wb = new Workbox("/sw.js");
+      await wb.register();
+      await wb.update();
+    }
   } catch (error) {}
 });
