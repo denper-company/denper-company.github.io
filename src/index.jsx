@@ -3,9 +3,9 @@ import "/src/index.css";
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     const sw = "serviceWorker" in navigator;
-    document
-      .querySelectorAll('link[media="print"]')
-      .forEach((link) => (link.media = "all"));
+    for await (const link of document.querySelectorAll('link[media="print"]')) {
+      link.media = "all";
+    }
     const [{ StrictMode }, { createRoot }, { Router }] = await Promise.all([
       import("react"),
       import("react-dom/client"),
