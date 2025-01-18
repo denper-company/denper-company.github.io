@@ -1,4 +1,4 @@
-export function Logo(props) {
+export default function Logo(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
