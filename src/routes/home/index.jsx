@@ -4,7 +4,7 @@ export function Component() {
       <header>
         <h1>Hello, World!</h1>
       </header>
-      <p>
+      <p className="text-balance">
         We are a small team of software engineers spread out all across the
         world, building apps that help and make people better.
       </p>
