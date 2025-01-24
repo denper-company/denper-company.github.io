@@ -1,6 +1,6 @@
 import { StrictMode, lazy } from "react";
 import { createRoot } from "react-dom/client";
-import cssUrl from "/src/index.css?url";
+import cssUrl from "src/index.css?url";
 const link = document.createElement("link");
 link.rel = "stylesheet";
 link.href = cssUrl;
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     for await (const link of document.querySelectorAll('link[media="print"]')) {
       link.media = "all";
     }
-    const Router = lazy(() => import("/src/router"));
+    const Router = lazy(() => import("src/router"));
     createRoot(document.getElementById("root")).render(
       <StrictMode>
         {sw && <link rel="manifest" href="/app.webmanifest" />}
