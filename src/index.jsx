@@ -5,13 +5,13 @@ const link = document.createElement("link");
 link.rel = "stylesheet";
 link.href = cssUrl;
 document.head.appendChild(link);
-const Router = lazy(() => import("/src/router"));
 const sw = "serviceWorker" in navigator;
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     for await (const link of document.querySelectorAll('link[media="print"]')) {
       link.media = "all";
     }
+    const Router = lazy(() => import("/src/router"));
     createRoot(document.getElementById("root")).render(
       <StrictMode>
         {sw && <link rel="manifest" href="/app.webmanifest" />}
