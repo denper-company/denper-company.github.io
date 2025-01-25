@@ -1,10 +1,6 @@
 import { StrictMode, lazy } from "react";
 import { createRoot } from "react-dom/client";
-import cssUrl from "src/index.css?url";
-const link = document.createElement("link");
-link.rel = "stylesheet";
-link.href = cssUrl;
-document.head.appendChild(link);
+import "src/index.css";
 const sw = "serviceWorker" in navigator;
 document.addEventListener("DOMContentLoaded", async () => {
   try {
