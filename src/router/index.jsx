@@ -23,6 +23,6 @@ if (import.meta.hot) {
   import.meta.hot.dispose(() => router.dispose());
 }
 
-export function Router() {
+export default function Router() {
   return <RouterProvider router={router} />;
 }

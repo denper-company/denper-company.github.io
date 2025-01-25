@@ -1,3 +1,6 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import Router from "src/router";
 import "src/index.css";
 const sw = "serviceWorker" in navigator;
 document.addEventListener("DOMContentLoaded", async () => {
@@ -5,11 +8,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     for await (const link of document.querySelectorAll('link[media="print"]')) {
       link.media = "all";
     }
-    const [{ StrictMode }, { createRoot }, { Router }] = await Promise.all([
-      import("react"),
-      import("react-dom/client"),
-      import("src/router"),
-    ]);
     createRoot(document.getElementById("root")).render(
       <StrictMode>
         {sw && <link rel="manifest" href="/app.webmanifest" />}
