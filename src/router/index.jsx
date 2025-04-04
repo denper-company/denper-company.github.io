@@ -1,15 +1,15 @@
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router";
-import Loader from "src/components/loader";
+import HydrateFallback from "src/components/loader";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    HydrateFallback: Loader,
+    HydrateFallback,
     lazy: () => import("src/routes"),
     children: [
       {
         index: true,
-        lazy: () => import("src/routes/home"),
+        lazy: () => import("src/routes/route"),
       },
     ],
   },
