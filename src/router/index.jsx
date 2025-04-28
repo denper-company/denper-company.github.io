@@ -5,11 +5,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     HydrateFallback,
-    lazy: () => import("src/routes"),
+    lazy: async () => import("src/routes"),
     children: [
       {
         index: true,
-        lazy: () => import("src/routes/route"),
+        lazy: async () => import("src/routes/route"),
       },
     ],
   },
