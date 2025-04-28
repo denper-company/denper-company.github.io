@@ -5,17 +5,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     HydrateFallback,
-    lazy: {
-      Component: async () => (await import("src/routes")).Component,
-      ErrorBoundary: async () =>
-        (await import("src/routes/error-boundary")).ErrorBoundary,
-    },
+    lazy: () => import("src/routes"),
     children: [
       {
         index: true,
-        lazy: {
-          Component: async () => (await import("src/routes/route")).Component,
-        },
+        lazy: () => import("src/routes/route"),
       },
     ],
   },
