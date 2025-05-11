@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router";
-import HydrateFallback from "src/components/loader";
+import HydrateFallback from "src/components/fallback";
 
 const router = createBrowserRouter([
   {
