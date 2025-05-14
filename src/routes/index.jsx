@@ -10,7 +10,7 @@ import Logo from "src/components/logo";
 export function Component() {
   return (
     <>
-      <main className="flex min-h-dvh flex-col items-center justify-center gap-16 p-4 text-center">
+      <main className="flex min-h-dvh flex-col items-center-safe justify-center-safe gap-16 p-4 text-center">
         <nav>
           <Link to="/" replace reloadDocument>
             <Logo className="h-16" />
@@ -26,7 +26,7 @@ export function Component() {
 export function ErrorBoundary() {
   const error = useRouteError();
   return (
-    <main className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-center">
+    <main className="absolute inset-0 flex flex-col items-center-safe justify-center-safe gap-2 text-center">
       <meta
         name="robots"
         content="none, noindex, nofollow, noarchive, nositelinkssearchbox, nosnippet, notranslate, noimageindex"
