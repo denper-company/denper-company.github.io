@@ -1,4 +1,9 @@
-import { createBrowserRouter, RouterProvider, Navigate } from "react-router";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  replace,
+  redirect,
+} from "react-router";
 import HydrateFallback from "src/components/fallback";
 
 const router = createBrowserRouter([
@@ -15,7 +20,10 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <Navigate to="/" replace />,
+    async loader() {
+      replace("/");
+      throw redirect("/");
+    },
   },
 ]);
 

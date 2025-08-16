@@ -1,10 +1,4 @@
-import {
-  Link,
-  Outlet,
-  ScrollRestoration,
-  useRouteError,
-  isRouteErrorResponse,
-} from "react-router";
+import { Link, Outlet, ScrollRestoration } from "react-router";
 import Logo from "src/components/logo";
 
 export function Component() {
@@ -24,38 +18,18 @@ export function Component() {
 }
 
 export function ErrorBoundary() {
-  const error = useRouteError();
   return (
-    <main className="absolute inset-0 flex flex-col items-center-safe justify-center-safe gap-2 text-center">
+    <main className="absolute inset-0 flex flex-col items-center-safe justify-center-safe gap-2 bg-red-50 text-center text-red-700 dark:bg-red-950 dark:text-red-300">
       <meta
         name="robots"
         content="none, noindex, nofollow, noarchive, nositelinkssearchbox, nosnippet, notranslate, noimageindex"
       />
       <header>
-        <h1 className="text-3xl">Oops!</h1>
-        <h2 className="text-2xl">Sorry, an unexpected error has occurred.</h2>
+        <h1 className="text-xl">
+          <strong>Oops!</strong>
+        </h1>
+        <h2 className="text-lg">Something busted that we didn't anticipate.</h2>
       </header>
-      <p className="text-xl text-red-600 dark:text-red-400">
-        {isRouteErrorResponse(error) ? (
-          <i>
-            {error.status} {error.statusText}
-          </i>
-        ) : (
-          <i>{error.message ?? error}</i>
-        )}
-      </p>
-      <footer>
-        <nav>
-          <Link
-            to="/"
-            replace
-            reloadDocument
-            className="text-blue-600 dark:text-blue-400"
-          >
-            <span aria-hidden="true">&larr;</span> Go home
-          </Link>
-        </nav>
-      </footer>
     </main>
   );
 }
