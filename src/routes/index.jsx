@@ -1,4 +1,4 @@
-import { Link, Outlet, ScrollRestoration } from "react-router";
+import { Outlet, ScrollRestoration } from "react-router";
 import Logo from "src/components/logo";
 
 export function Component() {
@@ -6,9 +6,9 @@ export function Component() {
     <>
       <main className="flex min-h-dvh flex-col items-center-safe justify-center-safe gap-16 p-4 text-center">
         <nav>
-          <Link to="/" replace reloadDocument>
+          <a href="/">
             <Logo className="h-16" />
-          </Link>
+          </a>
         </nav>
         <Outlet />
       </main>
@@ -19,17 +19,20 @@ export function Component() {
 
 export function ErrorBoundary() {
   return (
-    <main className="absolute inset-0 flex flex-col items-center-safe justify-center-safe gap-2 bg-red-50 text-center text-red-700 dark:bg-red-950 dark:text-red-300">
+    <main className="absolute inset-0 flex flex-col items-center-safe justify-center-safe gap-2 text-center">
       <meta
         name="robots"
         content="none, noindex, nofollow, noarchive, nositelinkssearchbox, nosnippet, notranslate, noimageindex"
       />
+      <title>Oops ~ DENPER Company</title>
       <header>
-        <h1 className="text-xl">
-          <strong>Oops!</strong>
-        </h1>
-        <h2 className="text-lg">Something busted that we didn't anticipate.</h2>
+        <h1 className="text-xl font-bold">Oops</h1>
+        <h2 className="text-lg">Something went wrong</h2>
       </header>
+      <br />
+      <a href="/" className="underline underline-offset-8">
+        Go Home
+      </a>
     </main>
   );
 }
