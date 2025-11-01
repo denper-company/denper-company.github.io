@@ -11,7 +11,7 @@ export function Component() {
     <>
       <main className="flex min-h-dvh flex-col items-center-safe justify-center-safe gap-16 p-4 text-center">
         <nav>
-          <a href="/">
+          <a href="/" title="DENPER Company logo">
             <Logo className="h-16" />
           </a>
         </nav>

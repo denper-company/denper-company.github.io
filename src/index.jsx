@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Router from "src/router";
 import "src/index.css";
+document.body.removeChild(document.querySelector("noscript"));
 const sw = "serviceWorker" in navigator;
 document.addEventListener("DOMContentLoaded", async () => {
   try {

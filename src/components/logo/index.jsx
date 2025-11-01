@@ -10,7 +10,6 @@ export default function Logo(props) {
       strokeLinejoin="round"
       {...props}
     >
-      <title>DENPER Company logo</title>
       <path d="m5,1 v10 c-5,0 -5,-5 0,-5 h2 c5,0 5,-5 0,-5 v10" />
     </svg>
   );
