@@ -2,20 +2,21 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Router from "src/router";
 import "src/index.css";
-document.body.removeChild(document.querySelector("noscript"));
 const sw = "serviceWorker" in navigator;
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     for await (const link of document.querySelectorAll('link[media="print"]')) {
       link.media = "all";
     }
+  } catch (error) {
+  } finally {
     createRoot(document.getElementById("root")).render(
       <StrictMode>
         {sw && <link rel="manifest" href="/app.webmanifest" />}
         <Router />
       </StrictMode>,
     );
-  } catch (error) {}
+  }
 });
 window.addEventListener("load", async () => {
   try {
@@ -25,5 +26,8 @@ window.addEventListener("load", async () => {
       await wb.register();
       await wb.update();
     }
-  } catch (error) {}
+  } catch (error) {
+  } finally {
+    document.body.removeChild(document.querySelector("noscript"));
+  }
 });
