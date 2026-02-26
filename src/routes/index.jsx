@@ -33,7 +33,7 @@ export function ErrorBoundary() {
         name="robots"
         content="none, noindex, nofollow, noarchive, nositelinkssearchbox, nosnippet, notranslate, noimageindex"
       />
-      <title>{`${status} ~ DENPER Company`}</title>
+      <title>{`${status} - DENPER Company`}</title>
       <header>
         <h1 className="text-xl font-bold">{status}</h1>
         <h2 className="text-lg">{data}</h2>

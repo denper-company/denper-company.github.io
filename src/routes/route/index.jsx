@@ -9,7 +9,7 @@ export function Component() {
         world, building apps that help and make people better.
       </p>
       <footer>
-        <nav>
+        <nav className="inline-flex gap-1">
           <a
             href="https://allyfile.com/"
             target="_blank"
@@ -18,7 +18,7 @@ export function Component() {
           >
             AllyFile
           </a>
-          &nbsp;&middot;&nbsp;
+          -
           <a
             href="https://allyweds.com/"
             target="_blank"
@@ -27,7 +27,7 @@ export function Component() {
           >
             AllyWeds
           </a>
-          &nbsp;&middot;&nbsp;
+          -
           <a
             href="https://allyspot.com/"
             target="_blank"
