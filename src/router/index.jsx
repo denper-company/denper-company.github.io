@@ -28,5 +28,5 @@ if (import.meta.hot) {
 }
 
 export default function Router() {
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={router} unstable_useTransitions />;
 }
