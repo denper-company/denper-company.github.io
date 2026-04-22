@@ -1,4 +1,3 @@
-import { resolve } from "node:path";
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 import react, { reactCompilerPreset } from "@vitejs/plugin-react";
@@ -34,10 +33,5 @@ export default defineConfig({
   build: {
     assetsInlineLimit: 0,
     outDir: "docs",
-  },
-  resolve: {
-    alias: {
-      src: resolve(__dirname, "src"),
-    },
   },
 });

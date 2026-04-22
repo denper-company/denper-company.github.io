@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import Router from "src/router";
-import "src/index.css";
+import Router from "#src/router";
+import "#src/index.css";
 const sw = "serviceWorker" in navigator;
 document.addEventListener("DOMContentLoaded", async () => {
   try {

@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "."
+    "paths": {
+      "#*": [
+        "./*"
+      ]
+    }
   },
-  "include": ["src"],
   "typeAcquisition": {
     "enable": true
   }

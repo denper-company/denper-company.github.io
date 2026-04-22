@@ -3,6 +3,9 @@
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
+  "imports": {
+    "#*": "./*"
+  },
   "scripts": {
     "compress": "gzip --best --keep --no-name --recursive docs",
     "dev": "vite",
