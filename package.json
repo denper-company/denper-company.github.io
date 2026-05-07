@@ -14,8 +14,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "19.2.5",
-    "react-dom": "19.2.5",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
     "react-router": "7.15.0",
     "workbox-window": "7.4.1"
   },
@@ -29,7 +29,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "prettier-plugin-tailwindcss": "0.8.0",
     "tailwindcss": "4.2.4",
-    "vite": "8.0.10"
+    "vite": "8.0.11"
   },
   "prettier": {
     "plugins": [
