@@ -24,11 +24,11 @@
     "@rolldown/plugin-babel": "0.2.3",
     "@tailwindcss/forms": "0.5.11",
     "@tailwindcss/typography": "0.5.20",
-    "@tailwindcss/vite": "4.3.0",
+    "@tailwindcss/vite": "4.3.1",
     "@vitejs/plugin-react": "6.0.2",
     "babel-plugin-react-compiler": "1.0.0",
     "prettier-plugin-tailwindcss": "0.8.0",
-    "tailwindcss": "4.3.0",
+    "tailwindcss": "4.3.1",
     "vite": "8.0.16"
   },
   "prettier": {
