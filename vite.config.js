@@ -7,15 +7,10 @@ const htmlPlugin = () => {
   return {
     name: "html-transform",
     transformIndexHtml(html) {
-      return html
-        .replace(
-          `type="module" crossorigin`,
-          `type="module" crossorigin="anonymous"`,
-        )
-        .replace(
-          `rel="stylesheet" crossorigin`,
-          `rel="stylesheet" media="print" crossorigin="anonymous"`,
-        );
+      return html.replace(
+        `rel="stylesheet" `,
+        `rel="stylesheet" media="print" `,
+      );
     },
   };
 };
