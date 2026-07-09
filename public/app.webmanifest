@@ -14,22 +14,16 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "/icon.svg",
-      "type": "image/svg+xml",
-      "sizes": "any",
-      "purpose": "monochrome"
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any"
     },
     {
       "src": "/icon.png",
       "type": "image/png",
       "sizes": "1024x1024",
       "purpose": "maskable"
-    },
-    {
-      "src": "/maskable.svg",
-      "type": "image/svg+xml",
-      "sizes": "any",
-      "purpose": "any"
     }
   ],
   "screenshots": [
