@@ -14,10 +14,10 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "/icon.png",
-      "type": "image/png",
-      "sizes": "1024x1024",
-      "purpose": "any"
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "monochrome"
     },
     {
       "src": "/icon.png",
@@ -29,7 +29,21 @@
       "src": "/maskable.svg",
       "type": "image/svg+xml",
       "sizes": "any",
-      "purpose": "maskable"
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "form_factor": "wide"
     }
   ]
 }
