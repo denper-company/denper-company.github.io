@@ -7,9 +7,9 @@ const htmlPlugin = () => {
   return {
     name: "html-transform",
     transformIndexHtml(html) {
-      return html.replace(
-        `rel="stylesheet" `,
-        `rel="stylesheet" media="print" `,
+      return html.replaceAll(
+        `rel="stylesheet"`,
+        `rel="stylesheet" media="print"`,
       );
     },
   };
