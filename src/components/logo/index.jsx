@@ -3,6 +3,8 @@ export default function Logo(props) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 12 12"
+      role="presentation"
+      aria-hidden="true"
       {...props}
     >
       <path

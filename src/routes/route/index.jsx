@@ -13,7 +13,7 @@ export function Component() {
           <a
             href="https://allyfile.com/"
             target="_blank"
-            rel="noreferrer noopener"
+            rel="noopener noreferrer"
             className="underline-offset-8"
           >
             AllyFile
@@ -22,7 +22,7 @@ export function Component() {
           <a
             href="https://allyweds.com/"
             target="_blank"
-            rel="noreferrer noopener"
+            rel="noopener noreferrer"
             className="underline-offset-8"
           >
             AllyWeds
@@ -31,7 +31,7 @@ export function Component() {
           <a
             href="https://allyspot.com/"
             target="_blank"
-            rel="noreferrer noopener"
+            rel="noopener noreferrer"
             className="underline-offset-8"
           >
             AllySpot

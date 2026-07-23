@@ -9,6 +9,7 @@
   "scripts": {
     "compress": "gzip --best --keep --no-name --recursive docs",
     "dev": "vite",
+    "lint": "oxlint",
     "build": "vite build",
     "postbuild": "npm run compress",
     "preview": "vite preview"
@@ -27,6 +28,7 @@
     "@tailwindcss/vite": "4.3.3",
     "@vitejs/plugin-react": "6.0.4",
     "babel-plugin-react-compiler": "1.0.0",
+    "oxlint": "1.75.0",
     "prettier-plugin-tailwindcss": "0.8.1",
     "tailwindcss": "4.3.3",
     "vite": "8.1.5"

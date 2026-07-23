@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     for await (const link of document.querySelectorAll('link[media="print"]')) {
       link.media = "all";
     }
-  } catch (error) {
+  } catch {
   } finally {
     createRoot(document.getElementById("root")).render(
       <StrictMode>
@@ -26,7 +26,7 @@ window.addEventListener("load", async () => {
       await wb.register();
       await wb.update();
     }
-  } catch (error) {
+  } catch {
   } finally {
     document.body.removeChild(document.querySelector("noscript"));
   }
