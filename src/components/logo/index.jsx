@@ -1,8 +1,10 @@
-export default function Logo(props) {
+export function Logo(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 12 12"
+      fill="none"
+      stroke="none"
       role="presentation"
       aria-hidden="true"
       {...props}

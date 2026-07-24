@@ -1,6 +1,6 @@
 import { createBrowserRouter, replace, redirect } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import HydrateFallback from "#src/components/fallback";
+import { Fallback as HydrateFallback } from "#src/components/fallback";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +27,6 @@ if (import.meta.hot) {
   import.meta.hot.dispose(() => router.dispose());
 }
 
-export default function Router() {
+export function Router() {
   return <RouterProvider router={router} useTransitions />;
 }
