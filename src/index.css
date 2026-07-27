@@ -5,7 +5,18 @@
 
 @theme {
   --font-sans:
-    InterVariable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    InterVariable, fallback-inter, ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-sans--font-feature-settings: "case", "cpsp", "salt", "tnum", "zero";
+}
+
+@layer theme {
+  @font-face {
+    font-family: "fallback-inter";
+    ascent-override: 90.2%;
+    descent-override: 22.48%;
+    line-gap-override: 0%;
+    size-adjust: 107.4%;
+    src: local("Arial");
+  }
 }
