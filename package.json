@@ -11,7 +11,7 @@
     "dev": "vite",
     "lint": "oxlint",
     "build": "vite build",
-    "postbuild": "npm run compress",
+    "postbuild": "cp docs/index.html docs/404.html && npm run compress",
     "preview": "vite preview"
   },
   "dependencies": {

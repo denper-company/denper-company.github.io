@@ -13,10 +13,20 @@
 @layer theme {
   @font-face {
     font-family: "fallback-inter";
-    ascent-override: 90.2%;
-    descent-override: 22.48%;
-    line-gap-override: 0%;
-    size-adjust: 107.4%;
+    font-style: normal;
     src: local("Arial");
+    ascent-override: 90.44%;
+    descent-override: 22.52%;
+    line-gap-override: 0%;
+    size-adjust: 107.12%;
+  }
+  @font-face {
+    font-family: "fallback-inter";
+    font-style: italic;
+    src: local("Arial Italic");
+    ascent-override: 90.44%;
+    descent-override: 22.52%;
+    line-gap-override: 0%;
+    size-adjust: 107.12%;
   }
 }
