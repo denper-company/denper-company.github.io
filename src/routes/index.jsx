@@ -1,7 +1,8 @@
 import {
-  isRouteErrorResponse,
+  Link,
   Outlet,
   ScrollRestoration,
+  isRouteErrorResponse,
   useRouteError,
 } from "react-router";
 import { Logo } from "#src/components/logo";
@@ -11,9 +12,9 @@ export function Component() {
     <>
       <main className="flex min-h-dvh flex-col items-center-safe justify-center-safe gap-16 p-4 text-center">
         <nav>
-          <a href="/" title="DENPER Company logo">
+          <Link to="/" title="DENPER Company logo" reloadDocument>
             <Logo className="h-16" />
-          </a>
+          </Link>
         </nav>
         <Outlet />
       </main>
@@ -23,10 +24,10 @@ export function Component() {
 }
 
 export function ErrorBoundary() {
-  const error = useRouteError();
-  const isRouteError = isRouteErrorResponse(error);
-  const status = isRouteError ? error.status : "Oops";
-  const data = isRouteError ? error.data : "Something went wrong";
+  const error = useRouteError(),
+   isRouteError = isRouteErrorResponse(error),
+   status = isRouteError ? error.status : "Oops",
+   data = isRouteError ? error.data : "Something went wrong";
   return (
     <main className="absolute inset-0 flex flex-col items-center-safe justify-center-safe gap-2 text-center">
       <meta
@@ -39,9 +40,9 @@ export function ErrorBoundary() {
         <h2 className="text-lg">{data}</h2>
       </header>
       <br />
-      <a href="/" className="underline underline-offset-8">
+      <Link to="/" className="underline underline-offset-8" reloadDocument>
         Go Home
-      </a>
+      </Link>
     </main>
   );
 }

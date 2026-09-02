@@ -1,25 +1,25 @@
-import { createBrowserRouter, replace, redirect } from "react-router";
+import { createBrowserRouter, redirect, replace } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import { Fallback as HydrateFallback } from "#src/components/fallback";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     HydrateFallback,
-    lazy: async () => import("#src/routes"),
     children: [
       {
         index: true,
-        lazy: async () => import("#src/routes/route"),
+        lazy: () => import("#src/routes/route"),
       },
     ],
+    lazy: () => import("#src/routes"),
+    path: "/",
   },
   {
-    path: "*",
-    async loader() {
+    loader() {
       replace("/");
       throw redirect("/");
     },
+    path: "*",
   },
 ]);
 

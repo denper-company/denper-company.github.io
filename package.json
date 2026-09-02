@@ -7,11 +7,12 @@
     "#*": "./*"
   },
   "scripts": {
+    "precompress": "cp docs/index.html docs/404.html",
     "compress": "gzip --best --keep --no-name --recursive docs",
     "dev": "vite",
-    "lint": "oxlint",
+    "lint": "oxlint --fix --fix-suggestions --fix-dangerously",
     "build": "vite build",
-    "postbuild": "cp docs/index.html docs/404.html && npm run compress",
+    "postbuild": "npm run compress",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -27,7 +28,7 @@
     "@tailwindcss/vite": "4.3.3",
     "@vitejs/plugin-react": "6.1.1",
     "babel-plugin-react-compiler": "1.0.0",
-    "oxlint": "1.80.0",
+    "oxlint": "1.81.0",
     "prettier-plugin-tailwindcss": "0.8.1",
     "tailwindcss": "4.3.3",
     "vite": "8.2.2"
