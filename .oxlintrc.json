@@ -17,5 +17,9 @@
     "vitest",
     "vue"
   ],
+  "categories": {
+    "correctness": "error",
+    "perf": "error"
+  },
   "ignorePatterns": ["docs/**", "public/**"]
 }

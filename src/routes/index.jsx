@@ -18,16 +18,16 @@ export function Component() {
         </nav>
         <Outlet />
       </main>
-      <ScrollRestoration getKey={({ pathname }) => pathname} />
+      <ScrollRestoration />
     </>
   );
 }
 
 export function ErrorBoundary() {
   const error = useRouteError(),
-   isRouteError = isRouteErrorResponse(error),
-   status = isRouteError ? error.status : "Oops",
-   data = isRouteError ? error.data : "Something went wrong";
+    isRouteError = isRouteErrorResponse(error),
+    data = isRouteError ? error.data : "Something went wrong",
+    status = isRouteError ? error.status : "Oops";
   return (
     <main className="absolute inset-0 flex flex-col items-center-safe justify-center-safe gap-2 text-center">
       <meta
