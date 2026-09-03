@@ -24,7 +24,7 @@ window.addEventListener(
     try {
       if (import.meta.env.PROD && sw) {
         const { Workbox } =
-          await import("https://storage.googleapis.com/workbox-cdn/releases/7.4.1/workbox-window.prod.mjs"),
+            await import("https://storage.googleapis.com/workbox-cdn/releases/7.4.1/workbox-window.prod.mjs"),
           wb = new Workbox("/sw.js");
         await wb.register();
         await wb.update();
