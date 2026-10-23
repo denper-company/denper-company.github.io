@@ -1,3 +1,4 @@
+import { ViewTransition } from "react";
 import {
   Link,
   Outlet,
@@ -16,7 +17,9 @@ export function Component() {
             <Logo className="h-16" />
           </Link>
         </nav>
-        <Outlet />
+        <ViewTransition>
+          <Outlet />
+        </ViewTransition>
       </main>
       <ScrollRestoration />
     </>
