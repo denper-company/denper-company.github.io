@@ -21,8 +21,8 @@
     "react-router": "8.5.1"
   },
   "devDependencies": {
-    "@babel/core": "8.0.9",
-    "@rolldown/plugin-babel": "0.2.4",
+    "@babel/core": "8.0.10",
+    "@rolldown/plugin-babel": "0.3.0",
     "@tailwindcss/forms": "0.5.11",
     "@tailwindcss/typography": "0.5.20",
     "@tailwindcss/vite": "4.3.3",
